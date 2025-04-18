@@ -1879,18 +1879,24 @@ button {
 .form-group textarea {
     width: 100%;
     padding: 0.75rem;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #1a1a1a; /* dark background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* softer border for dark theme */
     border-radius: var(--border-radius-md);
-    color: var(--text-color);
+    color: #ffffff; /* white text for dark background */
     transition: border-color var(--transition-fast);
+}
+
+/* Ensure options inside dropdowns are visible too */
+.form-group select option {
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--accent-color);
+    border-color: var(--accent-color, #66afe9);
 }
 
 .form-checkbox {
