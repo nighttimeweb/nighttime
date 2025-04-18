@@ -429,14 +429,37 @@ class PortfolioShowcase {
 // Sample portfolio data
 const portfolioProjects = [
   {
-    title: "Sweet Delights Bakery",
-    categories: ["development", "mobile"],
+    title: "The Rebbe's Guesthouse",
+    categories: ["development", "responsive"],
     thumbnail: "../images/portfolio/portfolio-1.jpg",
     images: [
-      "../images/portfolio/project1-full.jpg",
-      "../images/portfolio/project1-thumb1.jpg",
-      "../images/portfolio/project1-thumb2.jpg",
-      "../images/portfolio/project1-thumb3.jpg"
+      "../images/portfolio/project1-full.jpg"
+    ],
+    overview: "This guesthouse in Crown Heights needed a modern site for group Shabbaton rentals. We focused on clean design, room showcases, and easy-to-navigate information.",
+    challenge: "The owners had no online presence and needed a way to attract out-of-town groups for weekends. The site had to be both functional and welcoming.",
+    solution: "We created a custom HTML site with a gallery-style layout, room labels, and a booking section that reflects the Shabbos atmosphere and Crown Heights community.",
+    results: "The guesthouse is now fully booked most weekends, and visitors report a smooth experience in planning their stay.",
+    client: "The Rebbe's Guesthouse",
+    services: ["Website Development", "Responsive Layout", "Custom HTML/CSS"],
+    timeline: "3 Weeks",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    testimonial: {
+      quote: "Honestly, if I had gone with a typical web designer, I would’ve been paying thousands. Peretz built me a site that looks great, works smoothly, and didn’t break the bank.",
+      author: "Mendel",
+      title: "Owner, The Rebbe's Guesthouse"
+    }
+  }
+
+  /*
+  ,{
+    title: "Sweet Delights Bakery",
+    categories: ["development", "mobile"],
+    thumbnail: "../images/portfolio/portfolio-2.jpg",
+    images: [
+      "../images/portfolio/project2-full.jpg",
+      "../images/portfolio/project2-thumb1.jpg",
+      "../images/portfolio/project2-thumb2.jpg",
+      "../images/portfolio/project2-thumb3.jpg"
     ],
     overview: "This local bakery needed a website that would showcase their delicious products and help customers easily place orders. We created a mouth-watering design with high-quality imagery and intuitive navigation.",
     challenge: "The bakery had no online presence, making it difficult for potential customers to discover their offerings. They needed a website that would not only showcase their products but also provide information about their story, ingredients, and ordering process.",
@@ -452,15 +475,16 @@ const portfolioProjects = [
       title: "Owner, Sweet Delights Bakery"
     }
   },
+
   {
     title: "Boutique Clothing Store",
     categories: ["redesign", "mobile"],
-    thumbnail: "../images/portfolio/portfolio-2.jpg",
+    thumbnail: "../images/portfolio/portfolio-3.jpg",
     images: [
-      "../images/portfolio/project2-full.jpg",
-      "../images/portfolio/project2-thumb1.jpg",
-      "../images/portfolio/project2-thumb2.jpg",
-      "../images/portfolio/project2-thumb3.jpg"
+      "../images/portfolio/project3-full.jpg",
+      "../images/portfolio/project3-thumb1.jpg",
+      "../images/portfolio/project3-thumb2.jpg",
+      "../images/portfolio/project3-thumb3.jpg"
     ],
     overview: "This boutique clothing store needed a website redesign to better showcase their products and improve the online shopping experience for their customers.",
     challenge: "The store's previous website was outdated, difficult to navigate, and not mobile-friendly. This was resulting in high bounce rates and low conversion rates, especially from mobile users who make up a significant portion of their target audience.",
@@ -476,15 +500,16 @@ const portfolioProjects = [
       title: "Owner, Elegance Boutique"
     }
   },
+
   {
     title: "Professional Services Firm",
     categories: ["development"],
-    thumbnail: "../images/portfolio/portfolio-3.jpg",
+    thumbnail: "../images/portfolio/portfolio-4.jpg",
     images: [
-      "../images/portfolio/project3-full.jpg",
-      "../images/portfolio/project3-thumb1.jpg",
-      "../images/portfolio/project3-thumb2.jpg",
-      "../images/portfolio/project3-thumb3.jpg"
+      "../images/portfolio/project4-full.jpg",
+      "../images/portfolio/project4-thumb1.jpg",
+      "../images/portfolio/project4-thumb2.jpg",
+      "../images/portfolio/project4-thumb3.jpg"
     ],
     overview: "This professional services firm needed a sophisticated website that would establish their credibility and help them attract high-quality clients.",
     challenge: "The firm had recently rebranded and needed a website that would reflect their new identity and position them as industry leaders. They needed to communicate complex services in a clear, approachable way while maintaining a professional image.",
@@ -499,79 +524,8 @@ const portfolioProjects = [
       author: "Michael Chen",
       title: "Director, Professional Services Firm"
     }
-  },
-  {
-    title: "Local Restaurant",
-    categories: ["redesign", "mobile"],
-    thumbnail: "../images/portfolio/portfolio-4.jpg",
-    images: [
-      "../images/portfolio/project4-full.jpg",
-      "../images/portfolio/project4-thumb1.jpg",
-      "../images/portfolio/project4-thumb2.jpg",
-      "../images/portfolio/project4-thumb3.jpg"
-    ],
-    overview: "This local restaurant needed a website redesign to better showcase their menu, atmosphere, and make online reservations easier for customers.",
-    challenge: "The restaurant's previous website was outdated and difficult to navigate, especially on mobile devices. The menu was hard to read, and the reservation system was complicated, leading to customer frustration and lost business.",
-    solution: "We redesigned the website with a focus on beautiful food photography, an easy-to-read menu, and a streamlined reservation system. The new design is fully responsive and captures the restaurant's unique atmosphere and culinary style.",
-    results: "Since launching the redesigned website, the restaurant has seen a 45% increase in online reservations and a significant reduction in phone calls for basic information. Customer feedback has been overwhelmingly positive.",
-    client: "Sapore Italian Restaurant",
-    services: ["Website Redesign", "Mobile Optimization", "Reservation System Integration"],
-    timeline: "5 Weeks",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-    testimonial: {
-      quote: "Our new website has made a huge difference for our business. It's beautiful, easy to use, and has significantly increased our online reservations. We're getting compliments from customers all the time.",
-      author: "Antonio Rossi",
-      title: "Owner, Sapore Italian Restaurant"
-    }
-  },
-  {
-    title: "Fitness Studio",
-    categories: ["development", "mobile"],
-    thumbnail: "../images/portfolio/portfolio-5.jpg",
-    images: [
-      "../images/portfolio/project5-full.jpg",
-      "../images/portfolio/project5-thumb1.jpg",
-      "../images/portfolio/project5-thumb2.jpg",
-      "../images/portfolio/project5-thumb3.jpg"
-    ],
-    overview: "This fitness studio needed a website that would showcase their classes, instructors, and make it easy for clients to book sessions online.",
-    challenge: "As a new business, the studio needed to establish their brand online and create a booking system that would streamline their operations. They needed to communicate their unique approach to fitness and differentiate themselves from competitors.",
-    solution: "We developed a dynamic, energetic website that reflects the studio's vibrant atmosphere. The site features class descriptions, instructor bios, a class schedule, and an integrated booking system. We also implemented a blog for fitness tips and studio news.",
-    results: "The website has helped the studio establish a strong online presence and streamline their booking process. In the first three months after launch, they saw a 60% increase in new client sign-ups and a reduction in administrative work related to bookings.",
-    client: "Elevate Fitness Studio",
-    services: ["Website Development", "Booking System Integration", "Mobile Optimization"],
-    timeline: "7 Weeks",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Booking API Integration"],
-    testimonial: {
-      quote: "Our website has been a game-changer for our new studio. The online booking system has made life so much easier for both our clients and our staff. The design perfectly captures our energy and vibe.",
-      author: "Jessica Kim",
-      title: "Founder, Elevate Fitness Studio"
-    }
-  },
-  {
-    title: "Local Art Gallery",
-    categories: ["development"],
-    thumbnail: "../images/portfolio/portfolio-6.jpg",
-    images: [
-      "../images/portfolio/project6-full.jpg",
-      "../images/portfolio/project6-thumb1.jpg",
-      "../images/portfolio/project6-thumb2.jpg",
-      "../images/portfolio/project6-thumb3.jpg"
-    ],
-    overview: "This local art gallery needed a website that would showcase their exhibitions, featured artists, and help art enthusiasts discover their collections.",
-    challenge: "The gallery needed a website that would do justice to the artwork they display while providing information about exhibitions, artists, and events. They needed a platform that would appeal to art collectors and enthusiasts while being easy to update with new exhibitions.",
-    solution: "We created an elegant, minimalist website that puts the focus on the artwork. The site features a gallery of current and past exhibitions, artist profiles, an events calendar, and a newsletter sign-up to keep visitors informed about upcoming shows.",
-    results: "The website has helped the gallery reach a wider audience and establish themselves in the local art scene. They've reported increased attendance at exhibition openings and have attracted several new artists who discovered them through the website.",
-    client: "Spectrum Art Gallery",
-    services: ["Website Development", "Visual Design", "Content Management System"],
-    timeline: "6 Weeks",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Gallery System"],
-    testimonial: {
-      quote: "Our website beautifully showcases our artists' work and has become an essential tool for promoting our exhibitions. We've received many compliments on the design, and it's helped us connect with new artists and collectors.",
-      author: "David Wilson",
-      title: "Director, Spectrum Art Gallery"
-    }
   }
+  */
 ];
 
 // Initialize portfolio showcase when DOM is loaded
