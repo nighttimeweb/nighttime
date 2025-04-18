@@ -431,7 +431,7 @@ const portfolioProjects = [
   {
     title: "The Rebbe's Guesthouse",
     categories: ["development", "responsive"],
-    thumbnail: "../images/portfolio/portfolio-1.jpg",
+    thumbnail: "../images/portfolio-1.jpg",
     images: [
       "../images/portfolio/project1-full.jpg"
     ],
