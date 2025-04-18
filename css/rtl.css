@@ -1,0 +1,118 @@
+/* RTL Stylesheet for Hebrew version */
+
+/* General RTL adjustments */
+body.rtl {
+    text-align: right;
+}
+
+/* Navigation */
+.rtl .nav-menu {
+    padding-right: 0;
+}
+
+.rtl .language-selector {
+    margin-right: var(--spacing-lg);
+    margin-left: 0;
+}
+
+.rtl .language-dropdown {
+    left: 0;
+    right: auto;
+}
+
+/* Icons in services */
+.rtl .service-icon {
+    margin-left: var(--spacing-md);
+    margin-right: 0;
+}
+
+/* Testimonials */
+.rtl .testimonial-prev i {
+    transform: rotate(180deg);
+}
+
+.rtl .testimonial-next i {
+    transform: rotate(180deg);
+}
+
+/* Footer */
+.rtl .footer-contact ul li i {
+    margin-left: var(--spacing-sm);
+    margin-right: 0;
+}
+
+.rtl .footer-legal li {
+    margin-right: var(--spacing-md);
+    margin-left: 0;
+}
+
+.rtl .footer-legal li:first-child {
+    margin-right: 0;
+}
+
+/* Portfolio */
+.rtl .portfolio-filters {
+    flex-direction: row-reverse;
+}
+
+/* Contact form */
+.rtl .form-checkbox input {
+    margin-left: var(--spacing-sm);
+    margin-right: 0;
+}
+
+/* Method icons in contact page */
+.rtl .method-icon {
+    margin-left: var(--spacing-md);
+    margin-right: 0;
+}
+
+/* FAQ */
+.rtl .faq-question {
+    flex-direction: row-reverse;
+}
+
+/* Service features */
+.rtl .feature i {
+    margin-left: var(--spacing-sm);
+    margin-right: 0;
+}
+
+/* Back to top button */
+.rtl .back-to-top {
+    left: 20px;
+    right: auto;
+}
+
+/* Dark mode toggle */
+.rtl .dark-mode-toggle {
+    right: 20px;
+    left: auto;
+}
+
+/* Custom cursor */
+.rtl .custom-cursor {
+    transform: translate(50%, -50%);
+}
+
+/* Adjust grid layouts for RTL */
+@media (max-width: 992px) {
+    .rtl .about-image,
+    .rtl .custom-solutions-image {
+        order: -1;
+    }
+}
+
+/* Mobile menu adjustments */
+@media (max-width: 768px) {
+    .rtl .nav-menu {
+        right: -100%;
+        left: auto;
+        transition: right var(--transition-medium);
+    }
+    
+    .rtl .nav-menu.active {
+        right: 0;
+        left: auto;
+    }
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nighttime Website Development | Développement de Sites Web Premium</title>
+    <meta name="description" content="Nighttime Website Development crée des sites web premium pour les petites entreprises. Basé à Brooklyn, NY.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="../../index.html">
+    <link rel="alternate" hreflang="he" href="../he/index.html">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="../images/logo.svg" alt="Nighttime Website Development Logo" class="logo-img">
+                </a>
+                <div class="nav-toggle" id="navToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active" data-i18n="nav_home">Accueil</a></li>
+                    <li class="nav-item"><a href="pages/about.html" class="nav-link" data-i18n="nav_about">À Propos</a></li>
+                    <li class="nav-item"><a href="pages/services.html" class="nav-link" data-i18n="nav_services">Services</a></li>
+                    <li class="nav-item"><a href="pages/portfolio.html" class="nav-link" data-i18n="nav_portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="pages/pricing.html" class="nav-link" data-i18n="nav_pricing">Tarifs</a></li>
+                    <li class="nav-item"><a href="pages/contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+                <div class="language-selector">
+                    <button class="language-toggle">
+                        <i class="fas fa-globe"></i>
+                        <span>FR</span>
+                    </button>
+                    <ul class="language-dropdown">
+                        <li><a href="../../index.html">English</a></li>
+                        <li><a href="index.html" class="active">Français</a></li>
+                        <li><a href="../he/index.html">עברית</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="stars-container">
+            <div class="stars"></div>
+            <div class="stars2"></div>
+            <div class="stars3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero_title">Élever la Présence des Petites Entreprises</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Des sites web premium qui travaillent aussi dur que vous</p>
+                <div class="hero-cta">
+                    <a href="pages/portfolio.html" class="btn btn-primary" data-i18n="cta_see_work">Voir Notre Travail</a>
+                    <a href="pages/contact.html" class="btn btn-secondary" data-i18n="cta_get_started">Commencer</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="services_title">Nos Services</h2>
+                <p data-i18n="services_subtitle">Transformer votre présence numérique avec des solutions premium</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 data-i18n="service_1_title">Développement de Site Web</h3>
+                    <p data-i18n="service_1_desc">Des sites web sur mesure qui représentent parfaitement votre marque et vos objectifs commerciaux.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 data-i18n="service_2_title">Responsive Mobile</h3>
+                    <p data-i18n="service_2_desc">Des sites web qui s'affichent et fonctionnent parfaitement sur tous les appareils et tailles d'écran.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 data-i18n="service_3_title">Refonte de Site Web</h3>
+                    <p data-i18n="service_3_desc">Transformez votre site web obsolète en une présence numérique moderne et efficace.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3 data-i18n="service_4_title">Design Convivial</h3>
+                    <p data-i18n="service_4_desc">Des interfaces intuitives qui guident les visiteurs sans effort vers la conversion.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 data-i18n="service_5_title">Services de Domaine</h3>
+                    <p data-i18n="service_5_desc">Sécurisez le nom de domaine parfait qui représente votre marque et votre entreprise.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 data-i18n="service_6_title">Support de Lancement</h3>
+                    <p data-i18n="service_6_desc">Une assistance complète pour assurer le lancement réussi de votre site web.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="pages/services.html" class="btn btn-primary" data-i18n="explore_services">Explorer Tous les Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 data-i18n="about_title">À Propos de Nighttime Website Development</h2>
+                    <p class="lead" data-i18n="about_subtitle">Solutions web premium créées à Brooklyn, New York</p>
+                    <p data-i18n="about_desc_1">Fondée par Peretz Mochkin, Nighttime Website Development se spécialise dans la création de sites web exceptionnels pour les petites entreprises qui veulent se démarquer dans le paysage numérique.</p>
+                    <p data-i18n="about_desc_2">Nous croyons que chaque entreprise mérite un site web qui non seulement a l'air magnifique mais qui livre aussi des résultats. Notre approche combine l'excellence esthétique avec la fonctionnalité stratégique.</p>
+                    <a href="pages/about.html" class="btn btn-secondary" data-i18n="learn_more">En Savoir Plus Sur Nous</a>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="../images/about-preview.jpg" alt="Nighttime Website Development - Brooklyn, NY">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="portfolio-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="portfolio_title">Travaux en Vedette</h2>
+                <p data-i18n="portfolio_subtitle">Un aperçu de nos projets récents</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" id="project1">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/portfolio-1.jpg" alt="Sweet Delights Bakery">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Sweet Delights Bakery</h3>
+                                <p>Développement, Mobile</p>
+                                <a href="pages/portfolio.html#project1" class="btn btn-small">Voir les Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" id="project2">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/portfolio-2.jpg" alt="Boutique Clothing Store">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Boutique Clothing Store</h3>
+                                <p>Refonte, Mobile</p>
+                                <a href="pages/portfolio.html#project2" class="btn btn-small">Voir les Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" id="project3">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/portfolio-3.jpg" alt="Professional Services Firm">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Professional Services Firm</h3>
+                                <p>Développement</p>
+                                <a href="pages/portfolio.html#project3" class="btn btn-small">Voir les Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="pages/portfolio.html" class="btn btn-primary" data-i18n="view_all">Voir Tous les Projets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="testimonials_title">Témoignages Clients</h2>
+                <p data-i18n="testimonials_subtitle">Ce que nos clients disent de travailler avec nous</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Travailler avec Nighttime Website Development a été un changement de jeu pour notre boulangerie. Le site web qu'ils ont créé capture parfaitement notre marque et a considérablement augmenté nos commandes en ligne.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Propriétaire, Sweet Delights Bakery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Après que Peretz ait redessiné notre site web, nos demandes en ligne ont augmenté de 40%. Le nouveau site est non seulement beau mais aussi beaucoup plus facile pour nos clients à naviguer et à trouver ce dont ils ont besoin.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Emma Rodriguez</h4>
+                                <p>Propriétaire, Boutique Clothing Store</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Le site web que Nighttime a développé pour notre cabinet a élevé notre image professionnelle et nous a aidé à attirer des clients de meilleure qualité. Le processus était fluide, et les résultats ont dépassé nos attentes.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Directeur, Professional Services Firm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n="cta_title">Prêt à élever votre présence en ligne?</h2>
+                <p data-i18n="cta_subtitle">Créons un site web qui travaille aussi dur que vous.</p>
+                <div class="cta-buttons">
+                    <a href="pages/contact.html" class="btn btn-primary" data-i18n="cta_get_started">Commencer</a>
+                    <a href="pages/pricing.html" class="btn btn-secondary" data-i18n="view_pricing">Voir les Tarifs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="footer-logo">
+                        <img src="../images/logo-footer.svg" alt="Nighttime Website Development Logo">
+                    </a>
+                    <p data-i18n="footer_desc">Développement de sites web premium pour petites entreprises. Basé à Crown Heights, Brooklyn, NY.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 data-i18n="quick_links">Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                        <li><a href="pages/about.html" data-i18n="nav_about">À Propos</a></li>
+                        <li><a href="pages/services.html" data-i18n="nav_services">Services</a></li>
+                        <li><a href="pages/portfolio.html" data-i18n="nav_portfolio">Portfolio</a></li>
+                        <li><a href="pages/pricing.html" data-i18n="nav_pricing">Tarifs</a></li>
+                        <li><a href="pages/contact.html" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-i18n="contact_us">Contactez-Nous</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Crown Heights, Brooklyn, NY</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@nighttimewebdev.com">info@nighttimewebdev.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="copyright">© 2025 Nighttime Website Development. Tous droits réservés.</p>
+                <ul class="footer-legal">
+                    <li><a href="pages/privacy.html" data-i18n="privacy_policy">Politique de Confidentialité</a></li>
+                    <li><a href="pages/terms.html" data-i18n="terms_of_service">Conditions d'Utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/portfolio.js"></script>
+    <script src="../js/i18n.js"></script>
+</body>
+</html>

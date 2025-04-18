@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="50" viewBox="0 0 200 50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo container -->
+  <g transform="translate(0, 0)">
+    <!-- Moon and skyline icon -->
+    <g transform="translate(0, 0) scale(0.2)">
+      <circle cx="125" cy="125" r="125" fill="transparent"/>
+      <!-- Moon shape -->
+      <path d="M125,25 C179.5,25 225,70.5 225,125 C225,179.5 179.5,225 125,225 C70.5,225 25,179.5 25,125 C25,70.5 70.5,25 125,25 Z" fill="#0A1128"/>
+      <path d="M125,25 C179.5,25 225,70.5 225,125 C225,179.5 179.5,225 125,225 C125,225 125,25 125,25 Z" fill="#050A14"/>
+      
+      <!-- Stars -->
+      <circle cx="75" cy="90" r="4" fill="#00A6FB"/>
+      <circle cx="100" cy="60" r="3" fill="#9A8FBF"/>
+      <circle cx="150" cy="75" r="5" fill="#00A6FB"/>
+      <circle cx="175" cy="100" r="2.5" fill="#9A8FBF"/>
+      <circle cx="90" cy="150" r="3.5" fill="#00A6FB"/>
+      <circle cx="125" cy="175" r="3" fill="#9A8FBF"/>
+      <circle cx="160" cy="140" r="4" fill="#00A6FB"/>
+      
+      <!-- Building silhouette -->
+      <path d="M60,200 L80,200 L80,150 L100,150 L100,200 L120,200 L120,125 L140,125 L140,200 L160,200 L160,160 L180,160 L180,200 L200,200 L200,200 L60,200 Z" fill="#4A306D"/>
+      
+      <!-- Windows -->
+      <rect x="65" y="160" width="5" height="5" fill="#00A6FB"/>
+      <rect x="65" y="170" width="5" height="5" fill="#00A6FB"/>
+      <rect x="65" y="180" width="5" height="5" fill="#00A6FB"/>
+      <rect x="65" y="190" width="5" height="5" fill="#00A6FB"/>
+      
+      <rect x="90" y="160" width="5" height="5" fill="#00A6FB"/>
+      <rect x="90" y="170" width="5" height="5" fill="#00A6FB"/>
+      <rect x="90" y="180" width="5" height="5" fill="#00A6FB"/>
+      <rect x="90" y="190" width="5" height="5" fill="#00A6FB"/>
+      
+      <rect x="125" y="135" width="5" height="5" fill="#00A6FB"/>
+      <rect x="125" y="145" width="5" height="5" fill="#00A6FB"/>
+      <rect x="125" y="155" width="5" height="5" fill="#00A6FB"/>
+      <rect x="125" y="165" width="5" height="5" fill="#00A6FB"/>
+      <rect x="125" y="175" width="5" height="5" fill="#00A6FB"/>
+      <rect x="125" y="185" width="5" height="5" fill="#00A6FB"/>
+      <rect x="125" y="195" width="5" height="5" fill="#00A6FB"/>
+      
+      <rect x="165" y="170" width="5" height="5" fill="#00A6FB"/>
+      <rect x="165" y="180" width="5" height="5" fill="#00A6FB"/>
+      <rect x="165" y="190" width="5" height="5" fill="#00A6FB"/>
+      
+      <rect x="190" y="170" width="5" height="5" fill="#00A6FB"/>
+      <rect x="190" y="180" width="5" height="5" fill="#00A6FB"/>
+      <rect x="190" y="190" width="5" height="5" fill="#00A6FB"/>
+    </g>
+    
+    <!-- Text part of the logo -->
+    <g transform="translate(55, 15)">
+      <!-- Nighttime -->
+      <text font-family="Montserrat, sans-serif" font-weight="700" font-size="16" fill="#F2F2F2">
+        <tspan x="0" y="0">NIGHTTIME</tspan>
+      </text>
+      
+      <!-- Website Development -->
+      <text font-family="Montserrat, sans-serif" font-weight="500" font-size="12" fill="#00A6FB">
+        <tspan x="0" y="18">WEBSITE DEVELOPMENT</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
