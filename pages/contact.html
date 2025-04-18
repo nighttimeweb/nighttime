@@ -322,25 +322,20 @@
         </button>
     </footer>
 
-    <script src="../js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    <script>
-        function initMap() {
-            // Brooklyn coordinates
-            const brooklyn = { lat: 40.6782, lng: -73.9442 };
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 13,
-                center: brooklyn,
-                styles: [
-                    // Dark theme map styles would be added here
-                ]
-            });
-            const marker = new google.maps.Marker({
-                position: brooklyn,
-                map: map,
-                title: "Nighttime Website Development"
-            });
-        }
-    </script>
+  <section class="map-section">
+  <h2>Find Us in Crown Heights</h2>
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24208.641747504105!2d-73.96241545610133!3d40.67220141915969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b83e7660d3b%3A0x6c922b10d99212ac!2sCrown%20Heights%2C%20Brooklyn%2C%20NY!5e0!3m2!1sen!2sus!4v1744953529718!5m2!1sen!2sus" 
+      width="100%" 
+      height="100%" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
 </body>
 </html>
