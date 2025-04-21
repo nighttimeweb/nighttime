@@ -443,7 +443,7 @@ const portfolioProjects = [
   {
     title: "The Rebbe's Guesthouse",
     categories: ["development", "responsive"],
-    thumbnail: "/nighttime/images/portfolio-1-en.jpg", // Updated path
+    thumbnail: "/images/portfolio-1-en.jpg", // Updated path
     url: "https://TheRebbesGuests.com",
     overview: "This guesthouse in Crown Heights needed a modern site for group Shabbaton rentals. We focused on clean design, room showcases, and easy-to-navigate information.",
     challenge: "The owners had no online presence and needed a way to attract out-of-town groups for weekends. The site had to be both functional and welcoming.",
@@ -454,7 +454,7 @@ const portfolioProjects = [
     timeline: "3 weeks",
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
     images: [
-      "/nighttime/images/portfolio-1-en.jpg" // Only using the main image for now
+      "/images/portfolio-1-en.jpg" // Only using the main image for now
     ],
     testimonial: {
       quote: "Honestly, if I had gone with a typical web designer, I would've been paying thousands. Peretz built me a site that looks great, works smoothly, and didn't break the bank.",
