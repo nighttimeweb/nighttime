@@ -440,15 +440,15 @@ class PortfolioShowcase {
 // Sample portfolio data for French version
 const portfolioProjects = [
   {
-    title: "Maison d'Hôtes du Rabbi",
+    title: "Les invités du Rabbi",
     categories: ["development", "responsive"],
     thumbnail: "../../images/portfolio-1-fr.jpg", // French-specific image
-    url: "https://TheRebbesGuests.com/fr", // French-specific URL
+    url: "https://TheRebbesGuests.com/index-fr.html", // French-specific URL
     overview: "Cette maison d'hôtes à Crown Heights avait besoin d'un site moderne pour les locations de groupe Shabbaton. Nous nous sommes concentrés sur un design épuré, des présentations de chambres et des informations faciles à naviguer.",
     challenge: "Les propriétaires n'avaient aucune présence en ligne et avaient besoin d'un moyen d'attirer des groupes extérieurs pour les week-ends. Le site devait être à la fois fonctionnel et accueillant.",
     solution: "Nous avons créé un site HTML personnalisé avec une mise en page de type galerie, des étiquettes de chambre et une section de réservation qui reflète l'atmosphère du Shabbos et la communauté de Crown Heights.",
     results: "La maison d'hôtes est maintenant complètement réservée la plupart des week-ends, et les visiteurs mentionnent constamment les avoir trouvés grâce à leur site Web.",
-    client: "Mendel, Maison d'Hôtes du Rabbi",
+    client: "Mendel, Les invités du Rabbi",
     services: ["Conception de Site Web", "Développement Responsive", "Optimisation SEO"],
     timeline: "3 semaines",
     technologies: ["HTML5", "CSS3", "JavaScript", "Design Responsive"],
