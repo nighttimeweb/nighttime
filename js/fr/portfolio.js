@@ -454,8 +454,6 @@ const portfolioProjects = [
     technologies: ["HTML5", "CSS3", "JavaScript", "Design Responsive"],
     images: [
       "../../images/portfolio-1-fr.jpg",
-      "../../images/portfolio-1-detail-1.jpg",
-      "../../images/portfolio-1-detail-2.jpg"
     ],
     testimonial: {
       quote: "Honnêtement, si j'étais allé avec un concepteur Web typique, j'aurais payé des milliers. Peretz m'a construit un site qui a fière allure, fonctionne en douceur et n'a pas ruiné la banque.",
