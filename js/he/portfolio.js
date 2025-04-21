@@ -444,7 +444,7 @@ const portfolioProjects = [
   {
     title: "בית ההארחה של אורחי הרבי",
     categories: ["development", "responsive"],
-    thumbnail: "../../images/portfolio-1-he.jpg", // Hebrew-specific image
+    thumbnail: "/nighttime/images/portfolio-1-he.jpg", // Hebrew-specific image
     url: "https://TheRebbesGuests.com/index-he.html", // Hebrew-specific URL
     overview: "אכסניה זו בקראון הייטס הייתה זקוקה לאתר מודרני להשכרת קבוצות שבתון. התמקדנו בעיצוב נקי, תצוגת חדרים ומידע קל לניווט.",
     challenge: "לבעלים לא הייתה נוכחות מקוונת והם היו זקוקים לדרך למשוך קבוצות מחוץ לעיר לסופי שבוע. האתר היה צריך להיות גם פונקציונלי וגם מזמין.",
@@ -455,7 +455,7 @@ const portfolioProjects = [
     timeline: "3 שבועות",
     technologies: ["HTML5", "CSS3", "JavaScript", "עיצוב רספונסיבי"],
     images: [
-      "../../images/portfolio-1-he.jpg",
+      "/nighttime/images/portfolio-1-he.jpg",
     ],
     testimonial: {
       quote: "בכנות, אם הייתי הולך עם מעצב אתרים טיפוסי, הייתי משלם אלפים. פרץ בנה לי אתר שנראה נהדר, עובד בצורה חלקה, ולא שבר את הבנק.",

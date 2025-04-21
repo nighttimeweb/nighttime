@@ -442,7 +442,7 @@ const portfolioProjects = [
   {
     title: "Les invités du Rabbi",
     categories: ["development", "responsive"],
-    thumbnail: "../../images/portfolio-1-fr.jpg", // French-specific image
+    thumbnail: "/nighttime/images/portfolio-1-fr.jpg", // French-specific image
     url: "https://TheRebbesGuests.com/index-fr.html", // French-specific URL
     overview: "Cette maison d'hôtes à Crown Heights avait besoin d'un site moderne pour les locations de groupe Shabbaton. Nous nous sommes concentrés sur un design épuré, des présentations de chambres et des informations faciles à naviguer.",
     challenge: "Les propriétaires n'avaient aucune présence en ligne et avaient besoin d'un moyen d'attirer des groupes extérieurs pour les week-ends. Le site devait être à la fois fonctionnel et accueillant.",
@@ -453,7 +453,7 @@ const portfolioProjects = [
     timeline: "3 semaines",
     technologies: ["HTML5", "CSS3", "JavaScript", "Design Responsive"],
     images: [
-      "../../images/portfolio-1-fr.jpg",
+      "/nighttime/images/portfolio-1-fr.jpg",
     ],
     testimonial: {
       quote: "Honnêtement, si j'étais allé avec un concepteur Web typique, j'aurais payé des milliers. Peretz m'a construit un site qui a fière allure, fonctionne en douceur et n'a pas ruiné la banque.",
