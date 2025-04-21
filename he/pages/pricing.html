@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <link rel="icon" type="image/x-icon" href="/nighttime/favicon.ico">
+<!-- Standard favicon -->
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<!-- Optional high-res version -->
+<link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon-96x96.png">
+<!-- Optional for Apple devices -->
+<link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png">
+
+<!-- Theme Color (Browser bar color) -->
+<meta name="theme-color" content="#0A1128">
+
+<meta name="apple-mobile-web-app-title" content="MyWebSite" />
+<link rel="manifest" href="../../site.webmanifest" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מחירים | Nighttime Website Development</title>
-    <meta name="description" content="צפו בחבילות המחירים השקופות שלנו לפיתוח אתרים. מצאו את הפתרון המתאים לצרכים של העסק הקטן שלכם.">
+    <title>תמחור | Nighttime Website Development</title>
+    <meta name="description" content="גלה את חבילות פיתוח האתרים במחירים סבירים שלנו לעסקים קטנים. ממוקם בקראון הייטס, ברוקלין, ניו יורק.">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/rtl.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -21,7 +33,7 @@
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <a href="../../he/index.html" class="logo">
+                <a href="../index.html" class="logo">
                     <img src="../../images/logo.svg" alt="Nighttime Website Development Logo" class="logo-img">
                 </a>
                 <div class="nav-toggle" id="navToggle">
@@ -30,11 +42,11 @@
                     <span class="bar"></span>
                 </div>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="../../he/index.html" class="nav-link">בית</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">בית</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">אודות</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link">שירותים</a></li>
                     <li class="nav-item"><a href="portfolio.html" class="nav-link">תיק עבודות</a></li>
-                    <li class="nav-item"><a href="pricing.html" class="nav-link active">מחירים</a></li>
+                    <li class="nav-item"><a href="pricing.html" class="nav-link active">תמחור</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">צור קשר</a></li>
                 </ul>
                 <div class="language-selector">
@@ -60,257 +72,118 @@
             <div class="stars3"></div>
         </div>
         <div class="container">
-            <h1>מחירים</h1>
-            <p>מחירים שקופים לפתרונות אתרים פרימיום</p>
+            <h1>התמחור שלנו</h1>
+            <p>פתרונות במחירים סבירים לנוכחות המקוונת שלך</p>
         </div>
     </section>
 
-    <!-- Pricing Intro -->
-    <section class="pricing-intro">
+    <!-- Pricing Section -->
+    <section class="pricing-detailed">
         <div class="container">
             <div class="section-intro">
-                <h2>השקעה בהצלחה המקוונת שלך</h2>
-                <p class="lead">אנחנו מאמינים במחירים שקופים ובמתן ערך יוצא דופן. החבילות שלנו תוכננו כדי לענות על הצרכים של עסקים קטנים בשלבים שונים של צמיחה.</p>
-                <p>כל חבילה כוללת אתר מותאם אישית שהוא רספונסיבי למובייל, ידידותי למשתמש, ומותאם לביצועים. אנחנו גם מציעים פתרונות מותאמים אישית לעסקים עם דרישות ספציפיות.</p>
+                <h2>חבילות שקופות</h2>
+                <p>ב-Nighttime Website Development, אנו מאמינים שכל עסק ראוי לנוכחות מקוונת מקצועית במחיר סביר. החבילות שלנו מתוכננות להציע ערך יוצא דופן מבלי להתפשר על האיכות.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Pricing Plans -->
-    <section class="pricing-plans">
-        <div class="container">
+            <div class="pricing-toggle">
+                <span class="toggle-label">חודשי</span>
+                <label class="switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label active">תשלום חד פעמי</span>
+            </div>
+
             <div class="pricing-grid">
-                <!-- Basic Package -->
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>חבילת התחלה</h3>
-                        <div class="pricing-price">
-                            <span class="price">$399</span>
-                            <span class="period">תשלום חד פעמי</span>
+                        <h3>בסיסי</h3>
+                        <div class="price-container">
+                            <div class="price monthly">$49<span>/חודש</span></div>
+                            <div class="price annual active">$599<span>/חד פעמי</span></div>
                         </div>
-                        <p class="pricing-description">מושלם לעסקים קטנים שמתחילים את הנוכחות המקוונת שלהם</p>
+                        <p>אידיאלי לעסקים קטנים שמתחילים</p>
                     </div>
                     <div class="pricing-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> אתר מותאם אישית של 5 דפים</li>
+                            <li><i class="fas fa-check"></i> אתר בן 3 עמודים</li>
                             <li><i class="fas fa-check"></i> עיצוב רספונסיבי למובייל</li>
+                            <li><i class="fas fa-check"></i> אופטימיזציית SEO בסיסית</li>
                             <li><i class="fas fa-check"></i> טופס יצירת קשר</li>
-                            <li><i class="fas fa-check"></i> הגדרת SEO בסיסית</li>
-                            <li><i class="fas fa-check"></i> אינטגרציה עם רשתות חברתיות</li>
-                            <li><i class="fas fa-check"></i> אינטגרציה עם Google Maps</li>
-                            <li><i class="fas fa-check"></i> סבב תיקונים אחד</li>
-                            <li><i class="fas fa-check"></i> 30 ימי תמיכה</li>
-                            <li class="not-included"><i class="fas fa-times"></i> יצירת תוכן</li>
-                            <li class="not-included"><i class="fas fa-times"></i> עיצוב לוגו</li>
-                            <li class="not-included"><i class="fas fa-times"></i> אנימציות מתקדמות</li>
+                            <li><i class="fas fa-check"></i> אינטגרציה עם מדיה חברתית</li>
+                            <li><i class="fas fa-check"></i> תיקון אחד חינם</li>
+                            <li><i class="fas fa-times"></i> גלריית תיק עבודות</li>
+                            <li><i class="fas fa-times"></i> בלוג</li>
+                            <li><i class="fas fa-times"></i> תמיכה פרימיום</li>
                         </ul>
                     </div>
                     <div class="pricing-cta">
-                        <a href="contact.html?plan=starter" class="btn btn-secondary">התחל עכשיו</a>
+                        <a href="contact.html" class="btn btn-secondary">התחל</a>
                     </div>
                 </div>
 
-                <!-- Professional Package -->
                 <div class="pricing-card featured">
-                    <div class="pricing-badge">מומלץ</div>
+                    <div class="pricing-badge">פופולרי</div>
                     <div class="pricing-header">
-                        <h3>חבילה מקצועית</h3>
-                        <div class="pricing-price">
-                            <span class="price">$599</span>
-                            <span class="period">תשלום חד פעמי</span>
+                        <h3>מקצועי</h3>
+                        <div class="price-container">
+                            <div class="price monthly">$79<span>/חודש</span></div>
+                            <div class="price annual active">$999<span>/חד פעמי</span></div>
                         </div>
-                        <p class="pricing-description">פתרון מקיף לעסקים מבוססים שמחפשים לשפר את הנוכחות המקוונת שלהם</p>
+                        <p>מושלם לעסקים צומחים</p>
                     </div>
                     <div class="pricing-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> אתר מותאם אישית של 10 דפים</li>
-                            <li><i class="fas fa-check"></i> עיצוב רספונסיבי פרימיום</li>
-                            <li><i class="fas fa-check"></i> טופס יצירת קשר מתקדם</li>
-                            <li><i class="fas fa-check"></i> הגדרת SEO מקיפה</li>
-                            <li><i class="fas fa-check"></i> אינטגרציה עם רשתות חברתיות</li>
-                            <li><i class="fas fa-check"></i> אינטגרציה עם Google Maps</li>
-                            <li><i class="fas fa-check"></i> מדור בלוג/חדשות</li>
-                            <li><i class="fas fa-check"></i> גלריית תמונות</li>
-                            <li><i class="fas fa-check"></i> אנימציות בסיסיות</li>
-                            <li><i class="fas fa-check"></i> 2 סבבי תיקונים</li>
-                            <li><i class="fas fa-check"></i> 60 ימי תמיכה</li>
-                            <li><i class="fas fa-check"></i> עריכת תוכן בסיסית</li>
-                            <li class="not-included"><i class="fas fa-times"></i> עיצוב לוגו</li>
+                            <li><i class="fas fa-check"></i> אתר בן 5-7 עמודים</li>
+                            <li><i class="fas fa-check"></i> עיצוב פרימיום רספונסיבי</li>
+                            <li><i class="fas fa-check"></i> אופטימיזציית SEO מתקדמת</li>
+                            <li><i class="fas fa-check"></i> טפסים מותאמים אישית</li>
+                            <li><i class="fas fa-check"></i> אינטגרציה עם מדיה חברתית</li>
+                            <li><i class="fas fa-check"></i> 3 תיקונים חינם</li>
+                            <li><i class="fas fa-check"></i> גלריית תיק עבודות</li>
+                            <li><i class="fas fa-check"></i> בלוג פשוט</li>
+                            <li><i class="fas fa-check"></i> תמיכה פרימיום (3 חודשים)</li>
                         </ul>
                     </div>
                     <div class="pricing-cta">
-                        <a href="contact.html?plan=professional" class="btn btn-primary">התחל עכשיו</a>
+                        <a href="contact.html" class="btn btn-primary">התחל</a>
                     </div>
                 </div>
 
-                <!-- Premium Package -->
-                <div class="pricing-card coming-soon">
+                <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>חבילת פרימיום <span class="coming-badge">בקרוב</span></h3>
-                        <div class="pricing-price">
-                            <span class="price">—</span>
-                            <span class="period">בקרוב</span>
+                        <h3>עסקי</h3>
+                        <div class="price-container">
+                            <div class="price monthly">$129<span>/חודש</span></div>
+                            <div class="price annual active">$1,599<span>/חד פעמי</span></div>
                         </div>
-                        <p class="pricing-description">פתרון מתקדם עם תכונות חזקות - יושק בקרוב.</p>
+                        <p>פתרון מלא לעסקים מבוססים</p>
                     </div>
                     <div class="pricing-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> אתר מותאם אישית של 15+ דפים</li>
-                            <li><i class="fas fa-check"></i> עיצוב רספונסיבי פרימיום</li>
-                            <li><i class="fas fa-check"></i> טופס יצירת קשר מתקדם</li>
-                            <li><i class="fas fa-check"></i> הגדרת SEO מתקדמת</li>
-                            <li><i class="fas fa-check"></i> אינטגרציה עם רשתות חברתיות</li>
-                            <li><i class="fas fa-check"></i> אינטגרציה עם Google Maps</li>
-                            <li><i class="fas fa-check"></i> מדור בלוג/חדשות</li>
-                            <li><i class="fas fa-check"></i> גלריית תמונות</li>
-                            <li><i class="fas fa-check"></i> אנימציות מתקדמות</li>
-                            <li><i class="fas fa-check"></i> פונקציונליות מותאמת אישית</li>
-                            <li><i class="fas fa-check"></i> תמיכה רב-לשונית</li>
-                            <li><i class="fas fa-check"></i> 3 סבבי תיקונים</li>
-                            <li><i class="fas fa-check"></i> 90 ימי תמיכה</li>
-                            <li><i class="fas fa-check"></i> יצירת תוכן בסיסית</li>
-                            <li><i class="fas fa-check"></i> עיצוב לוגו</li>
+                            <li><i class="fas fa-check"></i> אתר בן 10+ עמודים</li>
+                            <li><i class="fas fa-check"></i> עיצוב פרימיום מותאם אישית</li>
+                            <li><i class="fas fa-check"></i> אופטימיזציית SEO מלאה</li>
+                            <li><i class="fas fa-check"></i> מערכת הזמנות/הזמנה</li>
+                            <li><i class="fas fa-check"></i> אינטגרציה מלאה</li>
+                            <li><i class="fas fa-check"></i> תיקונים בלתי מוגבלים</li>
+                            <li><i class="fas fa-check"></i> גלריית תיק עבודות מתקדמת</li>
+                            <li><i class="fas fa-check"></i> בלוג מלא</li>
+                            <li><i class="fas fa-check"></i> תמיכה פרימיום (6 חודשים)</li>
                         </ul>
                     </div>
                     <div class="pricing-cta">
-                        <button class="btn btn-disabled" disabled>בקרוב</button>
+                        <a href="contact.html" class="btn btn-secondary">התחל</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Custom Solutions -->
-    <section class="custom-solutions">
-        <div class="container">
-            <div class="custom-solutions-content">
-                <div class="custom-solutions-text">
-                    <h2>צריך פתרון מותאם אישית?</h2>
-                    <p>אנחנו מבינים שלכל עסק יש דרישות ייחודיות. אם החבילות הסטנדרטיות שלנו לא מתאימות בדיוק לצרכים שלך, אנחנו שמחים ליצור פתרון מותאם אישית במיוחד לעסק שלך.</p>
-                    <p>הפתרונות המותאמים אישית שלנו יכולים לכלול:</p>
-                    <ul>
-                        <li><i class="fas fa-check"></i> פונקציונליות מסחר אלקטרוני</li>
-                        <li><i class="fas fa-check"></i> אזורי חברות</li>
-                        <li><i class="fas fa-check"></i> יישומי אינטרנט מותאמים אישית</li>
-                        <li><i class="fas fa-check"></i> אינטגרציות מתקדמות</li>
-                        <li><i class="fas fa-check"></i> ועוד...</li>
-                    </ul>
-                    <a href="contact.html?plan=custom" class="btn btn-primary">בקש הצעת מחיר מותאמת אישית</a>
+            <div class="custom-solution">
+                <div class="custom-content">
+                    <h3>צריך פתרון מותאם אישית?</h3>
+                    <p>אנו מבינים שכל עסק הוא ייחודי. אם יש לך צרכים ספציפיים שאינם תואמים את החבילות הסטנדרטיות שלנו, נשמח לדון בפתרון מותאם אישית לעסק שלך.</p>
+                    <a href="contact.html" class="btn btn-primary">צור קשר</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Comparison Table -->
-    <section class="comparison-table">
-        <div class="container">
-            <div class="section-header">
-                <h2>השוואת חבילות</h2>
-                <p>השוואה מפורטת של מה כלול בכל חבילה</p>
-            </div>
-            <div class="table-responsive">
-                <table class="comparison-table-content">
-                    <thead>
-                        <tr>
-                            <th>תכונה</th>
-                            <th>התחלה</th>
-                            <th>מקצועית</th>
-                            <th>פרימיום</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>מספר דפים</td>
-                            <td>5</td>
-                            <td>10</td>
-                            <td>15+</td>
-                        </tr>
-                        <tr>
-                            <td>עיצוב רספונסיבי</td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>טופס יצירת קשר</td>
-                            <td>בסיסי</td>
-                            <td>מתקדם</td>
-                            <td>מתקדם</td>
-                        </tr>
-                        <tr>
-                            <td>הגדרת SEO</td>
-                            <td>בסיסית</td>
-                            <td>מקיפה</td>
-                            <td>מתקדמת</td>
-                        </tr>
-                        <tr>
-                            <td>אינטגרציה עם רשתות חברתיות</td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>אינטגרציה עם Google Maps</td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>מדור בלוג/חדשות</td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>גלריית תמונות</td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>אנימציות</td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td>בסיסיות</td>
-                            <td>מתקדמות</td>
-                        </tr>
-                        <tr>
-                            <td>פונקציונליות מותאמת אישית</td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>תמיכה רב-לשונית</td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>סבבי תיקונים</td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>תקופת תמיכה</td>
-                            <td>30 ימים</td>
-                            <td>60 ימים</td>
-                            <td>90 ימים</td>
-                        </tr>
-                        <tr>
-                            <td>יצירת תוכן</td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td>עריכה בסיסית</td>
-                            <td>יצירה בסיסית</td>
-                        </tr>
-                        <tr>
-                            <td>עיצוב לוגו</td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </section>
@@ -320,61 +193,89 @@
         <div class="container">
             <div class="section-header">
                 <h2>שאלות נפוצות</h2>
-                <p>תשובות לשאלות נפוצות על המחירים שלנו</p>
+                <p>תשובות לשאלות שלך על השירותים והמחירים שלנו</p>
             </div>
-            <div class="faq-container">
+            <div class="faq-grid">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>האם יש עמלות נסתרות?</h3>
+                        <h3>כמה זמן לוקח ליצור אתר?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                     </div>
                     <div class="faq-answer">
-                        <p>לא, המחירים שלנו שקופים לחלוטין. המחיר שאתה רואה הוא המחיר שאתה משלם עבור השירותים המפורטים בכל חבילה. אם נדרשים שירותים נוספים מעבר להיקף החבילה, נספק הצעת מחיר ברורה לפני שנמשיך.</p>
+                        <p>זמן יצירת אתר תלוי במורכבות שלו והיקף הפרויקט. בדרך כלל, אתר בסיסי יכול להיות מוכן תוך 2-3 שבועות, בעוד שאתר מורכב יותר עשוי לקחת 4-8 שבועות. נדון בלוח זמנים ספציפי במהלך הייעוץ הראשוני שלנו.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>האם אתם מציעים תכניות תשלום?</h3>
+                        <h3>מה כוללות החבילות שלכם?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                     </div>
                     <div class="faq-answer">
-                        <p>כן, אנחנו מציעים תכניות תשלום גמישות לכל החבילות שלנו. בדרך כלל, אנחנו דורשים מקדמה של 50% כדי להתחיל בעבודה, עם יתרת התשלום עם השלמת הפרויקט. לפרויקטים גדולים יותר, אנחנו יכולים לארגן תשלומים לפי אבני דרך. אנא צור קשר כדי לדון באפשרויות שמתאימות לתקציב שלך.</p>
+                        <p>כל החבילות שלנו כוללות עיצוב ופיתוח אתר, אופטימיזציה למכשירים ניידים, אופטימיזציית SEO בסיסית, ואחסון לשנה הראשונה. חבילות ספציפיות כוללות תכונות נוספות כפי שמצוין בסעיף המחירים.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>מה קורה אחרי שתקופת התמיכה מסתיימת?</h3>
+                        <h3>האם אתם מציעים שירותי תחזוקה מתמשכים?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                     </div>
                     <div class="faq-answer">
-                        <p>אחרי שתקופת התמיכה הכלולה מסתיימת, אתה יכול לרכוש תמיכה נוספת לפי הצורך או לבחור באחת מחבילות התחזוקה החודשיות שלנו. חבילות התחזוקה שלנו כוללות עדכונים קבועים, ניטור אבטחה, עדכוני תוכן ותמיכה טכנית.</p>
+                        <p>כן, אנו מציעים חבילות תחזוקה מתמשכות לשמירה על האתר שלך מעודכן, מאובטח ופועל באופן אופטימלי. חבילות אלה כוללות עדכונים שוטפים, גיבויים ותמיכה טכנית. צור איתנו קשר לפרטים נוספים על חבילות התחזוקה שלנו.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>האם החבילות שלכם כוללות דמי אירוח?</h3>
+                        <h3>האם אני יכול לשדרג את החבילה שלי מאוחר יותר?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                     </div>
                     <div class="faq-answer">
-                        <p>כן — אירוח כלול במלואו בכל החבילות שלנו. נטפל בהגדרה ובהטמעה כך שהאתר שלך יהיה חי ונגיש ללא עמלות נוספות.</p>
+                        <p>בהחלט! אנו מבינים שצרכי העסק שלך עשויים להתפתח עם הזמן. אתה יכול בקלות לשדרג את החבילה שלך בכל עת כדי לגשת לתכונות ושירותים נוספים.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>מה אם אני צריך שינויים אחרי שסבבי התיקונים נוצלו?</h3>
+                        <h3>מה קורה אם אני לא מרוצה מהעיצוב?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                     </div>
                     <div class="faq-answer">
-                        <p>ניתן לרכוש סבבי תיקונים נוספים לפי הצורך. אנחנו גובים תעריף שעתי סביר עבור שינויים שמבוקשים מעבר לסבבי התיקונים הכלולים. תמיד נספק הערכה ברורה לפני שנמשיך עם כל עבודה נוספת.</p>
+                        <p>שביעות רצונך היא העדיפות שלנו. כל חבילה כוללת מספר מסוים של תיקונים כדי להבטיח שהעיצוב הסופי עומד בציפיות שלך. אם אינך מרוצה לאחר תיקונים אלה, נעבוד איתך כדי למצוא פתרון שמתאים לך.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>כמה זמן לוקח להשלים אתר?</h3>
+                        <h3>האם יש עלויות נסתרות?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                     </div>
                     <div class="faq-answer">
-                        <p>הזמן משתנה בהתאם לחבילה ולדרישות הספציפיות. בדרך כלל, חבילת ההתחלה שלנו לוקחת 2-4 שבועות, המקצועית לוקחת 4-6 שבועות, והפרימיום לוקחת 6-8 שבועות. פרויקטים מותאמים אישית עשויים לקחת יותר זמן בהתאם למורכבות. נספק לוח זמנים ספציפי במהלך הייעוץ הראשוני שלנו.</p>
+                        <p>לא, אנו מאמינים בתמחור שקוף. כל העלויות מצוינות בבירור בחבילות שלנו. אם נדרשים שירותים נוספים מעבר להיקף החבילה שנבחרה, נדון בכך איתך מראש ונקבל את אישורך לפני שנחייב עלויות נוספות.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>מה אומרים הלקוחות שלנו</h2>
+                <p>גלה למה לקוחות בוחרים ב-Nighttime Website Development</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "בכנות, אם הייתי פונה למעצב אתרים טיפוסי, הייתי משלם אלפים. פרץ בנה לי אתר שנראה נהדר, עובד בצורה מושלמת, ולא הרס את התקציב שלי."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>מנדל</h4>
+                                <p>לקוח, The Rebbe's Guesthouse</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -385,11 +286,11 @@
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2>מוכן להתחיל?</h2>
-                <p>צור קשר עוד היום כדי לדון בפרויקט שלך ולמצוא את הפתרון המתאים לעסק שלך.</p>
+                <h2>מוכן להשקיע בנוכחות המקוונת שלך?</h2>
+                <p>צור איתנו קשר היום כדי לדון בפרויקט שלך.</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">צור קשר</a>
-                    <a href="portfolio.html" class="btn btn-secondary">צפה בעבודות שלנו</a>
+                    <a href="contact.html" class="btn btn-primary">התחל</a>
+                    <a href="services.html" class="btn btn-secondary">חקור את השירותים שלנו</a>
                 </div>
             </div>
         </div>
@@ -400,7 +301,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <a href="../../he/index.html" class="footer-logo">
+                    <a href="../index.html" class="footer-logo">
                         <img src="../../images/logo-footer.svg" alt="Nighttime Website Development Logo">
                     </a>
                     <p>פיתוח אתרים פרימיום לעסקים קטנים. ממוקם בקראון הייטס, ברוקלין, ניו יורק.</p>
@@ -414,11 +315,11 @@
                 <div class="footer-links">
                     <h3>קישורים מהירים</h3>
                     <ul>
-                        <li><a href="../../he/index.html">בית</a></li>
+                        <li><a href="../index.html">בית</a></li>
                         <li><a href="about.html">אודות</a></li>
                         <li><a href="services.html">שירותים</a></li>
                         <li><a href="portfolio.html">תיק עבודות</a></li>
-                        <li><a href="pricing.html">מחירים</a></li>
+                        <li><a href="pricing.html">תמחור</a></li>
                         <li><a href="contact.html">צור קשר</a></li>
                     </ul>
                 </div>
@@ -426,7 +327,7 @@
                     <h3>צור קשר</h3>
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> קראון הייטס, ברוקלין, ניו יורק</li>
-                        <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+13472205998">(347) 220-5998</a></li>
                         <li><i class="fas fa-envelope"></i> <a href="mailto:info@nighttimewebdev.com">info@nighttimewebdev.com</a></li>
                     </ul>
                 </div>
@@ -435,7 +336,7 @@
                 <p>&copy; 2025 Nighttime Website Development. כל הזכויות שמורות.</p>
                 <ul class="footer-legal">
                     <li><a href="privacy.html">מדיניות פרטיות</a></li>
-                    <li><a href="terms.html">תנאי שירות</a></li>
+                    <li><a href="terms.html">תנאי שימוש</a></li>
                 </ul>
             </div>
         </div>
@@ -445,5 +346,49 @@
     </footer>
 
     <script src="../../js/main.js"></script>
+    <script>
+        // Pricing toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const billingToggle = document.getElementById('billingToggle');
+            const monthlyPrices = document.querySelectorAll('.price.monthly');
+            const annualPrices = document.querySelectorAll('.price.annual');
+            
+            billingToggle.addEventListener('change', function() {
+                if (this.checked) {
+                    monthlyPrices.forEach(price => price.classList.remove('active'));
+                    annualPrices.forEach(price => price.classList.add('active'));
+                } else {
+                    monthlyPrices.forEach(price => price.classList.add('active'));
+                    annualPrices.forEach(price => price.classList.remove('active'));
+                }
+            });
+            
+            // FAQ toggle functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const toggle = item.querySelector('.faq-toggle');
+                
+                question.addEventListener('click', function() {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.faq-toggle i').className = 'fas fa-plus';
+                        }
+                    });
+                    
+                    item.classList.toggle('active');
+                    
+                    if (item.classList.contains('active')) {
+                        toggle.innerHTML = '<i class="fas fa-minus"></i>';
+                    } else {
+                        toggle.innerHTML = '<i class="fas fa-plus"></i>';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
