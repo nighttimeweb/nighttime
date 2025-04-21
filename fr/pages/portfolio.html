@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Standard favicon -->
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<!-- Optional high-res version -->
+<link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon-96x96.png">
+<!-- Optional for Apple devices -->
+<link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png">
+
+<!-- Theme Color (Browser bar color) -->
+<meta name="theme-color" content="#0A1128">
+
+<meta name="apple-mobile-web-app-title" content="MyWebSite" />
+<link rel="manifest" href="../../site.webmanifest" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nighttime Website Development</title>
+    <meta name="description" content="Découvrez notre portfolio de sites web premium pour les petites entreprises. Basé à Crown Heights, Brooklyn, NY.">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="../../pages/portfolio.html">
+    <link rel="alternate" hreflang="he" href="../../he/pages/portfolio.html">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../index.html" class="logo">
+                    <img src="../../images/logo.svg" alt="Nighttime Website Development Logo" class="logo-img">
+                </a>
+                <div class="nav-toggle" id="navToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">À Propos</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li class="nav-item"><a href="pricing.html" class="nav-link">Tarifs</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="language-selector">
+                    <button class="language-toggle">
+                        <i class="fas fa-globe"></i>
+                        <span>FR</span>
+                    </button>
+                    <ul class="language-dropdown">
+                        <li><a href="../../pages/portfolio.html">English</a></li>
+                        <li><a href="portfolio.html" class="active">Français</a></li>
+                        <li><a href="../../he/pages/portfolio.html">עברית</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="stars-container">
+            <div class="stars"></div>
+            <div class="stars2"></div>
+            <div class="stars3"></div>
+        </div>
+        <div class="container">
+            <h1>Notre Portfolio</h1>
+            <p>Nos Premiers Projets</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-detailed">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Nos Projets Récents</h2>
+                <p>Nous sommes un studio récent, mais nous avons déjà lancé notre premier site professionnel — et ce n'est que le début. Nous prenons actuellement de nouveaux clients — votre projet pourrait être présenté ici prochainement.</p>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="development">Développement</button>
+                <button class="filter-btn" data-filter="redesign">Refonte</button>
+                <button class="filter-btn" data-filter="responsive">Responsive</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1: The Rebbe's Guesthouse -->
+                <div class="portfolio-item" data-category="development responsive">
+                    <div class="portfolio-image">
+                        <img src="../../images/portfolio-1.jpg" alt="The Rebbe's Guesthouse Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>The Rebbe's Guesthouse</h3>
+                                <p>Développement de Site Web Personnalisé, Design Responsive</p>
+                                <a href="#project1" class="btn btn-small portfolio-details-btn">Voir les Détails</a>
+                                <a href="https://TheRebbesGuests.com" target="_blank" class="btn btn-small">Visiter le Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Details Modals -->
+            <div id="project1" class="portfolio-modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div class="project-details">
+                        <div class="project-images">
+                            <div class="main-image">
+                                <img src="../../images/portfolio-1.jpg" alt="The Rebbe's Guesthouse Website">
+                            </div>
+                            <div class="image-thumbnails">
+                                <img src="../../images/portfolio-1-detail-1.jpg" alt="The Rebbe's Guesthouse Homepage">
+                                <img src="../../images/portfolio-1-detail-2.jpg" alt="The Rebbe's Guesthouse Mobile View">
+                                <img src="../../images/portfolio-1-detail-3.jpg" alt="The Rebbe's Guesthouse Booking Page">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h2>The Rebbe's Guesthouse</h2>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <h4>Client:</h4>
+                                    <p>Mendel, The Rebbe's Guesthouse</p>
+                                </div>
+                                <div class="meta-item">
+                                    <h4>Services:</h4>
+                                    <p>Développement de Site Web, Design Responsive, Optimisation SEO</p>
+                                </div>
+                                <div class="meta-item">
+                                    <h4>Date:</h4>
+                                    <p>2025</p>
+                                </div>
+                                <div class="meta-item">
+                                    <h4>Site Web:</h4>
+                                    <p><a href="https://TheRebbesGuests.com" target="_blank">TheRebbesGuests.com</a></p>
+                                </div>
+                            </div>
+                            <div class="project-description">
+                                <h3>À Propos du Projet</h3>
+                                <p>The Rebbe's Guesthouse avait besoin d'un site web professionnel pour présenter leur établissement d'hébergement unique situé à Crown Heights. Le client souhaitait un site web élégant mais abordable qui mettrait en valeur les caractéristiques de la maison d'hôtes et faciliterait les réservations.</p>
+                                <p>Nous avons créé un site web responsive avec un design élégant qui reflète l'atmosphère chaleureuse et accueillante de la maison d'hôtes. Le site comprend des galeries de photos, des informations sur les chambres, et un système de réservation simple.</p>
+                                <h3>Défis et Solutions</h3>
+                                <p>Le principal défi était de créer un site web de qualité professionnelle avec un budget limité. Nous avons relevé ce défi en utilisant des solutions efficaces et en nous concentrant sur les éléments essentiels qui auraient le plus grand impact sur l'expérience utilisateur et les conversions.</p>
+                                <h3>Résultats</h3>
+                                <p>Le site web a considérablement amélioré la présence en ligne de The Rebbe's Guesthouse, attirant plus de visiteurs et facilitant le processus de réservation. Le client a été extrêmement satisfait du résultat, notant que le site web a dépassé ses attentes tout en restant dans les limites de son budget.</p>
+                                <div class="project-testimonial">
+                                    <blockquote>
+                                        "Honnêtement, si j'avais fait appel à un concepteur web typique, j'aurais payé des milliers. Peretz m'a construit un site qui a belle apparence, fonctionne parfaitement, et n'a pas ruiné mon budget."
+                                    </blockquote>
+                                    <cite>— Mendel, Propriétaire</cite>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à créer votre prochain projet?</h2>
+                <p>Contactez-nous aujourd'hui pour discuter de votre vision.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Commencer</a>
+                    <a href="pricing.html" class="btn btn-secondary">Voir les Tarifs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../../images/logo-footer.svg" alt="Nighttime Website Development Logo">
+                    </a>
+                    <p>Développement de sites web premium pour petites entreprises. Basé à Crown Heights, Brooklyn, NY.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Tarifs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contactez-Nous</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Crown Heights, Brooklyn, NY</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+13472205998">(347) 220-5998</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@nighttimewebdev.com">info@nighttimewebdev.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nighttime Website Development. Tous droits réservés.</p>
+                <ul class="footer-legal">
+                    <li><a href="privacy.html">Politique de Confidentialité</a></li>
+                    <li><a href="terms.html">Conditions d'Utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/portfolio.js"></script>
+</body>
+</html>
