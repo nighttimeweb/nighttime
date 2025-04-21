@@ -442,7 +442,11 @@ const portfolioProjects = [
   {
     title: "Les invités du Rabbi",
     categories: ["development", "responsive"],
+<<<<<<< HEAD
     thumbnail: "/nighttime/images/portfolio-1-fr.jpg", // French-specific image
+=======
+    thumbnail: "/images/portfolio-1-fr.jpg", // French-specific image
+>>>>>>> 8c268fbffaa30f31563c7393ac91b97b1e6266a6
     url: "https://TheRebbesGuests.com/index-fr.html", // French-specific URL
     overview: "Cette maison d'hôtes à Crown Heights avait besoin d'un site moderne pour les locations de groupe Shabbaton. Nous nous sommes concentrés sur un design épuré, des présentations de chambres et des informations faciles à naviguer.",
     challenge: "Les propriétaires n'avaient aucune présence en ligne et avaient besoin d'un moyen d'attirer des groupes extérieurs pour les week-ends. Le site devait être à la fois fonctionnel et accueillant.",
