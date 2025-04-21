@@ -90,6 +90,10 @@ class PortfolioShowcase {
       detailsButton.setAttribute('data-project', `project${index + 1}`);
       detailsButton.textContent = 'View Details';
       
+      info.appendChild(title);
+      info.appendChild(category);
+      info.appendChild(detailsButton);
+      
       // Create visit site button if URL exists
       if (project.url) {
         const visitButton = document.createElement('a');
@@ -100,9 +104,6 @@ class PortfolioShowcase {
         info.appendChild(visitButton);
       }
       
-      info.appendChild(title);
-      info.appendChild(category);
-      info.appendChild(detailsButton);
       overlay.appendChild(info);
       imageContainer.appendChild(image);
       imageContainer.appendChild(overlay);
