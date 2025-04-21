@@ -1,4 +1,4 @@
-// Portfolio Showcase Component
+// Portfolio Showcase Component for English version
 class PortfolioShowcase {
   constructor(containerId, projects) {
     this.container = document.getElementById(containerId);
@@ -84,14 +84,25 @@ class PortfolioShowcase {
       const category = document.createElement('p');
       category.textContent = project.categories ? project.categories.join(', ') : '';
       
-      const button = document.createElement('button');
-      button.className = 'btn btn-small portfolio-view-btn';
-      button.setAttribute('data-project', `project${index + 1}`);
-      button.textContent = 'View Details';
+      // Create view details button
+      const detailsButton = document.createElement('a');
+      detailsButton.className = 'btn btn-small portfolio-details-btn';
+      detailsButton.setAttribute('data-project', `project${index + 1}`);
+      detailsButton.textContent = 'View Details';
+      
+      // Create visit site button if URL exists
+      if (project.url) {
+        const visitButton = document.createElement('a');
+        visitButton.className = 'btn btn-small';
+        visitButton.href = project.url;
+        visitButton.target = '_blank';
+        visitButton.textContent = 'Visit Site';
+        info.appendChild(visitButton);
+      }
       
       info.appendChild(title);
       info.appendChild(category);
-      info.appendChild(button);
+      info.appendChild(detailsButton);
       overlay.appendChild(info);
       imageContainer.appendChild(image);
       imageContainer.appendChild(overlay);
@@ -365,7 +376,7 @@ class PortfolioShowcase {
     });
     
     // View project buttons
-    const viewButtons = this.container.querySelectorAll('.portfolio-view-btn');
+    const viewButtons = this.container.querySelectorAll('.portfolio-details-btn');
     const modal = document.getElementById('projectModal');
     const closeButton = modal.querySelector('.close-modal');
     
@@ -426,155 +437,39 @@ class PortfolioShowcase {
   }
 }
 
-// Sample portfolio data
+// Sample portfolio data for English version
 const portfolioProjects = [
   {
     title: "The Rebbe's Guesthouse",
     categories: ["development", "responsive"],
-   thumbnail: "/img/portfolio-1.jpg",
+    thumbnail: "../images/portfolio-1-en.jpg", // English-specific image
+    url: "https://TheRebbesGuests.com/en", // English-specific URL
     overview: "This guesthouse in Crown Heights needed a modern site for group Shabbaton rentals. We focused on clean design, room showcases, and easy-to-navigate information.",
     challenge: "The owners had no online presence and needed a way to attract out-of-town groups for weekends. The site had to be both functional and welcoming.",
     solution: "We created a custom HTML site with a gallery-style layout, room labels, and a booking section that reflects the Shabbos atmosphere and Crown Heights community.",
-    results: "The guesthouse is now fully booked most weekends, and visitors report a smooth experience in planning their stay.",
-    client: "The Rebbe's Guesthouse",
-    services: ["Website Development", "Responsive Layout", "Custom HTML/CSS"],
-    timeline: "3 Weeks",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
+    results: "The guesthouse is now fully booked most weekends, and visitors consistently mention finding them through their website.",
+    client: "Mendel, The Rebbe's Guesthouse",
+    services: ["Website Design", "Responsive Development", "SEO Optimization"],
+    timeline: "3 weeks",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    images: [
+      "../images/portfolio-1-en.jpg",
+      "../images/portfolio-1-detail-1.jpg",
+      "../images/portfolio-1-detail-2.jpg"
+    ],
     testimonial: {
       quote: "Honestly, if I had gone with a typical web designer, I would've been paying thousands. Peretz built me a site that looks great, works smoothly, and didn't break the bank.",
       author: "Mendel",
       title: "Owner, The Rebbe's Guesthouse"
     }
   }
-
-  /*
-  ,{
-    title: "Sweet Delights Bakery",
-    categories: ["development", "mobile"],
-    thumbnail: "../images/portfolio/portfolio-2.jpg",
-    images: [
-      "../images/portfolio/project2-full.jpg",
-      "../images/portfolio/project2-thumb1.jpg",
-      "../images/portfolio/project2-thumb2.jpg",
-      "../images/portfolio/project2-thumb3.jpg"
-    ],
-    overview: "This local bakery needed a website that would showcase their delicious products and help customers easily place orders. We created a mouth-watering design with high-quality imagery and intuitive navigation.",
-    challenge: "The bakery had no online presence, making it difficult for potential customers to discover their offerings. They needed a website that would not only showcase their products but also provide information about their story, ingredients, and ordering process.",
-    solution: "We designed a visually appealing website with a warm, inviting color palette that reflects the bakery's brand. The site features high-quality images of their products, an easy-to-use menu, and a simple ordering system. We ensured the website was fully responsive, allowing customers to place orders from any device.",
-    results: "Since launching the website, the bakery has seen a 40% increase in orders and has attracted customers from beyond their immediate neighborhood. The website has become an essential tool for their business growth.",
-    client: "Sweet Delights Bakery",
-    services: ["Website Development", "Mobile Optimization", "Photography Coordination"],
-    timeline: "4 Weeks",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-    testimonial: {
-      quote: "Nighttime Website Development transformed our business. Our beautiful new website has helped us reach so many new customers. The ordering system is simple to use, and we've received countless compliments on the design.",
-      author: "Sarah Johnson",
-      title: "Owner, Sweet Delights Bakery"
-    }
-  },
-
-  {
-    title: "Boutique Clothing Store",
-    categories: ["redesign", "mobile"],
-    thumbnail: "../images/portfolio/portfolio-3.jpg",
-    images: [
-      "../images/portfolio/project3-full.jpg",
-      "../images/portfolio/project3-thumb1.jpg",
-      "../images/portfolio/project3-thumb2.jpg",
-      "../images/portfolio/project3-thumb3.jpg"
-    ],
-    overview: "This boutique clothing store needed a website redesign to better showcase their products and improve the online shopping experience for their customers.",
-    challenge: "The store's previous website was outdated, difficult to navigate, and not mobile-friendly. This was resulting in high bounce rates and low conversion rates, especially from mobile users who make up a significant portion of their target audience.",
-    solution: "We redesigned the website with a clean, modern aesthetic that puts the focus on their product photography. We implemented an intuitive navigation system, improved product filtering, and created a seamless mobile shopping experience. The new design also better reflects the store's upscale brand identity.",
-    results: "After launching the redesigned website, the store saw a 35% decrease in bounce rate, a 40% increase in online inquiries, and a 25% increase in average time spent on the site. Mobile conversions increased by 50%.",
-    client: "Elegance Boutique",
-    services: ["Website Redesign", "User Experience Design", "Mobile Optimization"],
-    timeline: "6 Weeks",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-    testimonial: {
-      quote: "After Peretz redesigned our website, our online inquiries increased by 40%. The new site is not only beautiful but also much easier for our customers to navigate and find what they need.",
-      author: "Emma Rodriguez",
-      title: "Owner, Elegance Boutique"
-    }
-  },
-
-  {
-    title: "Professional Services Firm",
-    categories: ["development"],
-    thumbnail: "../images/portfolio/portfolio-4.jpg",
-    images: [
-      "../images/portfolio/project4-full.jpg",
-      "../images/portfolio/project4-thumb1.jpg",
-      "../images/portfolio/project4-thumb2.jpg",
-      "../images/portfolio/project4-thumb3.jpg"
-    ],
-    overview: "This professional services firm needed a sophisticated website that would establish their credibility and help them attract high-quality clients.",
-    challenge: "The firm had recently rebranded and needed a website that would reflect their new identity and position them as industry leaders. They needed to communicate complex services in a clear, approachable way while maintaining a professional image.",
-    solution: "We created a premium website with a clean, sophisticated design that emphasizes professionalism and expertise. The site features clear service descriptions, team profiles that highlight credentials, and case studies that demonstrate results. We also implemented a blog section for thought leadership content.",
-    results: "The new website has helped the firm attract higher-quality clients and establish themselves as thought leaders in their industry. They've reported a 30% increase in qualified leads and have been able to raise their rates due to improved market positioning.",
-    client: "Chen & Associates",
-    services: ["Website Development", "Content Strategy", "Domain Services"],
-    timeline: "8 Weeks",
-    technologies: ["HTML5", "CSS3", "JavaScript", "WordPress"],
-    testimonial: {
-      quote: "The website Nighttime developed for our firm has elevated our professional image and helped us attract higher-quality clients. The process was smooth, and the results exceeded our expectations.",
-      author: "Michael Chen",
-      title: "Director, Professional Services Firm"
-    }
-  }
-  */
 ];
 
-// Initialize portfolio showcase when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-  // Check if we're on the portfolio page
+// Initialize portfolio showcase
+document.addEventListener('DOMContentLoaded', () => {
   const portfolioContainer = document.getElementById('portfolioContainer');
   
   if (portfolioContainer) {
     new PortfolioShowcase('portfolioContainer', portfolioProjects);
-  }
-  
-  // For homepage portfolio preview
-  const portfolioPreview = document.querySelector('.portfolio-preview');
-  
-  if (portfolioPreview) {
-    // Get the first 3 projects for preview
-    const previewProjects = portfolioProjects.slice(0, 3);
-    
-    // Update portfolio items in preview
-    const portfolioItems = portfolioPreview.querySelectorAll('.portfolio-item');
-    
-    if (portfolioItems.length > 0) {
-      portfolioItems.forEach((item, index) => {
-        if (previewProjects[index]) {
-          const project = previewProjects[index];
-          
-          // Update image
-          const image = item.querySelector('img');
-          if (image) {
-            image.src = project.thumbnail;
-            image.alt = project.title;
-          }
-          
-          // Update title
-          const title = item.querySelector('h3');
-          if (title) {
-            title.textContent = project.title;
-          }
-          
-          // Update categories
-          const categories = item.querySelector('p');
-          if (categories) {
-            categories.textContent = project.categories ? project.categories.join(', ') : '';
-          }
-          
-          // Update link
-          const link = item.querySelector('a');
-          if (link) {
-            link.href = `pages/portfolio.html#${item.id}`;
-          }
-        }
-      });
-    }
   }
 });
