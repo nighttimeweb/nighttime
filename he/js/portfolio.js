@@ -1,4 +1,4 @@
-// רכיב תצוגת תיק העבודות
+// Portfolio Showcase Component
 class PortfolioShowcase {
   constructor(containerId, projects) {
     this.container = document.getElementById(containerId);
@@ -10,21 +10,21 @@ class PortfolioShowcase {
   init() {
     if (!this.container) return;
     
-    // יצירת כפתורי סינון
+    // Create filter buttons
     this.createFilters();
     
-    // יצירת רשת תיק העבודות
+    // Create portfolio grid
     this.createPortfolioGrid();
     
-    // יצירת חלון מודאלי לפרטי הפרויקט
+    // Create modal for project details
     this.createProjectModal();
     
-    // אתחול מאזיני אירועים
+    // Initialize event listeners
     this.initEventListeners();
   }
 
   createFilters() {
-    // קבלת קטגוריות ייחודיות מהפרויקטים
+    // Get unique categories from projects
     const categories = ['all'];
     this.projects.forEach(project => {
       if (project.categories) {
@@ -36,11 +36,11 @@ class PortfolioShowcase {
       }
     });
     
-    // יצירת מיכל סינון
+    // Create filter container
     const filterContainer = document.createElement('div');
     filterContainer.className = 'portfolio-filters';
     
-    // יצירת כפתורי סינון
+    // Create filter buttons
     categories.forEach(category => {
       const button = document.createElement('button');
       button.className = 'filter-btn' + (category === 'all' ? ' active' : '');
@@ -49,16 +49,16 @@ class PortfolioShowcase {
       filterContainer.appendChild(button);
     });
     
-    // הוספת סינונים למיכל
+    // Add filters to container
     this.container.appendChild(filterContainer);
   }
 
   createPortfolioGrid() {
-    // יצירת מיכל רשת
+    // Create grid container
     const gridContainer = document.createElement('div');
     gridContainer.className = 'portfolio-grid';
     
-    // יצירת פריטי תיק העבודות
+    // Create portfolio items
     this.projects.forEach((project, index) => {
       const item = document.createElement('div');
       item.className = 'portfolio-item';
@@ -87,7 +87,7 @@ class PortfolioShowcase {
       const button = document.createElement('button');
       button.className = 'btn btn-small portfolio-view-btn';
       button.setAttribute('data-project', `project${index + 1}`);
-      button.textContent = 'צפה בפרטים';
+      button.textContent = 'View Details';
       
       info.appendChild(title);
       info.appendChild(category);
@@ -99,12 +99,12 @@ class PortfolioShowcase {
       gridContainer.appendChild(item);
     });
     
-    // הוספת הרשת למיכל
+    // Add grid to container
     this.container.appendChild(gridContainer);
   }
 
   createProjectModal() {
-    // יצירת מיכל מודאלי אם הוא לא קיים
+    // Create modal container if it doesn't exist
     let modal = document.getElementById('projectModal');
     
     if (!modal) {
@@ -122,13 +122,13 @@ class PortfolioShowcase {
       const modalBody = document.createElement('div');
       modalBody.className = 'modal-body';
       
-      // יצירת פרטי פרויקט לכל פרויקט
+      // Create project details for each project
       this.projects.forEach((project, index) => {
         const projectDetails = document.createElement('div');
         projectDetails.className = 'project-details';
         projectDetails.id = `project${index + 1}-details`;
         
-        // כותרת הפרויקט
+        // Project header
         const projectHeader = document.createElement('div');
         projectHeader.className = 'project-header';
         
@@ -142,7 +142,7 @@ class PortfolioShowcase {
         projectHeader.appendChild(projectTitle);
         projectHeader.appendChild(projectCategory);
         
-        // גלריית הפרויקט
+        // Project gallery
         const projectGallery = document.createElement('div');
         projectGallery.className = 'project-gallery';
         
@@ -159,7 +159,7 @@ class PortfolioShowcase {
             const thumb = document.createElement('img');
             thumb.className = 'project-thumb';
             thumb.src = image;
-            thumb.alt = `${project.title} - תמונה ${i + 1}`;
+            thumb.alt = `${project.title} - Image ${i + 1}`;
             thumbnails.appendChild(thumb);
           });
         }
@@ -167,37 +167,37 @@ class PortfolioShowcase {
         projectGallery.appendChild(mainImage);
         projectGallery.appendChild(thumbnails);
         
-        // מידע הפרויקט
+        // Project info
         const projectInfo = document.createElement('div');
         projectInfo.className = 'project-info';
         
         const projectDescription = document.createElement('div');
         projectDescription.className = 'project-description';
         
-        // סקירה כללית
+        // Overview
         const overviewTitle = document.createElement('h3');
-        overviewTitle.textContent = 'סקירת הפרויקט';
+        overviewTitle.textContent = 'Project Overview';
         
         const overviewText = document.createElement('p');
         overviewText.textContent = project.overview || '';
         
-        // האתגר
+        // Challenge
         const challengeTitle = document.createElement('h3');
-        challengeTitle.textContent = 'האתגר';
+        challengeTitle.textContent = 'The Challenge';
         
         const challengeText = document.createElement('p');
         challengeText.textContent = project.challenge || '';
         
-        // הפתרון
+        // Solution
         const solutionTitle = document.createElement('h3');
-        solutionTitle.textContent = 'הפתרון שלנו';
+        solutionTitle.textContent = 'Our Solution';
         
         const solutionText = document.createElement('p');
         solutionText.textContent = project.solution || '';
         
-        // התוצאות
+        // Results
         const resultsTitle = document.createElement('h3');
-        resultsTitle.textContent = 'תוצאות';
+        resultsTitle.textContent = 'Results';
         
         const resultsText = document.createElement('p');
         resultsText.textContent = project.results || '';
@@ -211,16 +211,16 @@ class PortfolioShowcase {
         projectDescription.appendChild(resultsTitle);
         projectDescription.appendChild(resultsText);
         
-        // מטא-נתונים של הפרויקט
+        // Project meta
         const projectMeta = document.createElement('div');
         projectMeta.className = 'project-meta';
         
-        // לקוח
+        // Client
         const clientItem = document.createElement('div');
         clientItem.className = 'meta-item';
         
         const clientTitle = document.createElement('h4');
-        clientTitle.textContent = 'לקוח';
+        clientTitle.textContent = 'Client';
         
         const clientText = document.createElement('p');
         clientText.textContent = project.client || '';
@@ -228,12 +228,12 @@ class PortfolioShowcase {
         clientItem.appendChild(clientTitle);
         clientItem.appendChild(clientText);
         
-        // שירותים
+        // Services
         const servicesItem = document.createElement('div');
         servicesItem.className = 'meta-item';
         
         const servicesTitle = document.createElement('h4');
-        servicesTitle.textContent = 'שירותים';
+        servicesTitle.textContent = 'Services';
         
         const servicesText = document.createElement('p');
         servicesText.innerHTML = project.services ? project.services.join('<br>') : '';
@@ -241,12 +241,12 @@ class PortfolioShowcase {
         servicesItem.appendChild(servicesTitle);
         servicesItem.appendChild(servicesText);
         
-        // ציר זמן
+        // Timeline
         const timelineItem = document.createElement('div');
         timelineItem.className = 'meta-item';
         
         const timelineTitle = document.createElement('h4');
-        timelineTitle.textContent = 'ציר זמן';
+        timelineTitle.textContent = 'Timeline';
         
         const timelineText = document.createElement('p');
         timelineText.textContent = project.timeline || '';
@@ -254,12 +254,12 @@ class PortfolioShowcase {
         timelineItem.appendChild(timelineTitle);
         timelineItem.appendChild(timelineText);
         
-        // טכנולוגיות
+        // Technologies
         const techItem = document.createElement('div');
         techItem.className = 'meta-item';
         
         const techTitle = document.createElement('h4');
-        techTitle.textContent = 'טכנולוגיות';
+        techTitle.textContent = 'Technologies';
         
         const techText = document.createElement('p');
         techText.innerHTML = project.technologies ? project.technologies.join('<br>') : '';
@@ -275,7 +275,7 @@ class PortfolioShowcase {
         projectInfo.appendChild(projectDescription);
         projectInfo.appendChild(projectMeta);
         
-        // עדות לקוח
+        // Project testimonial
         if (project.testimonial) {
           const testimonial = document.createElement('div');
           testimonial.className = 'project-testimonial';
@@ -325,29 +325,29 @@ class PortfolioShowcase {
   }
 
   initEventListeners() {
-    // כפתורי סינון
+    // Filter buttons
     const filterButtons = this.container.querySelectorAll('.filter-btn');
     const portfolioItems = this.container.querySelectorAll('.portfolio-item');
     
     filterButtons.forEach(button => {
       button.addEventListener('click', () => {
-        // הסרת מחלקת active מכל הכפתורים
+        // Remove active class from all buttons
         filterButtons.forEach(btn => {
           btn.classList.remove('active');
         });
         
-        // הוספת מחלקת active לכפתור שנלחץ
+        // Add active class to clicked button
         button.classList.add('active');
         
         const filter = button.getAttribute('data-filter');
         this.currentFilter = filter;
         
-        // הצגה/הסתרה של פריטי תיק העבודות לפי הסינון
+        // Show/hide portfolio items based on filter
         portfolioItems.forEach(item => {
           if (filter === 'all' || item.getAttribute('data-category').includes(filter)) {
             item.style.display = 'block';
             
-            // הוספת אנימציה
+            // Add animation
             setTimeout(() => {
               item.style.opacity = '1';
               item.style.transform = 'scale(1)';
@@ -364,7 +364,7 @@ class PortfolioShowcase {
       });
     });
     
-    // כפתורי צפייה בפרויקט
+    // View project buttons
     const viewButtons = this.container.querySelectorAll('.portfolio-view-btn');
     const modal = document.getElementById('projectModal');
     const closeButton = modal.querySelector('.close-modal');
@@ -375,36 +375,36 @@ class PortfolioShowcase {
         const projectDetails = document.getElementById(`${projectId}-details`);
         
         if (projectDetails) {
-          // הסתרת כל פרטי הפרויקט
+          // Hide all project details
           modal.querySelectorAll('.project-details').forEach(details => {
             details.style.display = 'none';
           });
           
-          // הצגת פרטי הפרויקט שנבחר
+          // Show the selected project details
           projectDetails.style.display = 'block';
           
-          // הצגת החלון המודאלי
+          // Show the modal
           modal.style.display = 'block';
-          document.body.style.overflow = 'hidden'; // מניעת גלילה
+          document.body.style.overflow = 'hidden'; // Prevent scrolling
         }
       });
     });
     
-    // סגירת החלון המודאלי בלחיצה על כפתור הסגירה
+    // Close modal when clicking the close button
     closeButton.addEventListener('click', () => {
       modal.style.display = 'none';
-      document.body.style.overflow = 'auto'; // הפעלת גלילה מחדש
+      document.body.style.overflow = 'auto'; // Re-enable scrolling
     });
     
-    // סגירת החלון המודאלי בלחיצה מחוץ לתוכן
+    // Close modal when clicking outside the content
     window.addEventListener('click', (event) => {
       if (event.target === modal) {
         modal.style.display = 'none';
-        document.body.style.overflow = 'auto'; // הפעלת גלילה מחדש
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
       }
     });
     
-    // טיפול בלחיצות על תמונות ממוזערות בגלריית הפרויקט
+    // Handle thumbnail clicks in project gallery
     const projectThumbs = modal.querySelectorAll('.project-thumb');
     
     projectThumbs.forEach(thumb => {
@@ -412,10 +412,10 @@ class PortfolioShowcase {
         const mainImage = thumb.closest('.project-gallery').querySelector('.project-main-image');
         
         if (mainImage) {
-          // החלפת תכונת src
+          // Swap the src attribute
           mainImage.src = thumb.src;
           
-          // הוספת אנימציה קטנה
+          // Add a small animation
           mainImage.style.opacity = '0';
           setTimeout(() => {
             mainImage.style.opacity = '1';
@@ -426,78 +426,38 @@ class PortfolioShowcase {
   }
 }
 
-// נתוני תיק העבודות לדוגמה
+// Sample portfolio data
 const portfolioProjects = [
   {
-    title: "בית הארחה של הרבי",
+    title: "The Rebbe's Guesthouse",
     categories: ["development", "responsive"],
-    thumbnail: "../../images/portfolio-1.jpg",
-    overview: "בית הארחה זה בקראון הייטס נזקק לאתר מודרני להשכרת קבוצות לשבתון. התמקדנו בעיצוב נקי, הצגת חדרים ומידע קל לניווט.",
-    challenge: "לבעלים לא הייתה נוכחות מקוונת ונזקקו לדרך למשוך קבוצות מחוץ לעיר לסופי שבוע. האתר היה צריך להיות גם פונקציונלי וגם מזמין.",
-    solution: "יצרנו אתר HTML מותאם אישית עם פריסה בסגנון גלריה, תוויות חדרים וקטע הזמנות המשקף את אווירת השבת וקהילת קראון הייטס.",
-    results: "בית ההארחה כעת מלא ברוב סופי השבוע, ומבקרים מדווחים על חוויה חלקה בתכנון השהות שלהם.",
-    client: "בית הארחה של הרבי",
-    services: ["פיתוח אתר", "פריסה רספונסיבית", "HTML/CSS מותאם אישית"],
-    timeline: "3 שבועות",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
+    thumbnail: "../images/portfolio-1.jpg",
+    overview: "This guesthouse in Crown Heights needed a modern site for group Shabbaton rentals. We focused on clean design, room showcases, and easy-to-navigate information.",
+    challenge: "The owners had no online presence and needed a way to attract out-of-town groups for weekends. The site had to be both functional and welcoming.",
+    solution: "We created a custom HTML site with a gallery-style layout, room labels, and a booking section that reflects the Shabbos atmosphere and Crown Heights community.",
+    results: "The guesthouse is now fully booked most weekends, and visitors consistently mention finding them through their website.",
+    client: "Mendel, The Rebbe's Guesthouse",
+    services: ["Website Design", "Responsive Development", "SEO Optimization"],
+    timeline: "3 weeks",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    images: [
+      "../images/portfolio-1.jpg",
+      "../images/portfolio-1-detail-1.jpg",
+      "../images/portfolio-1-detail-2.jpg"
+    ],
     testimonial: {
-      quote: "בכנות, אם הייתי הולך עם מעצב אתרים טיפוסי, הייתי משלם אלפים. פרץ בנה לי אתר שנראה נהדר, עובד חלק, ולא שבר את הבנק.",
-      author: "מנדל",
-      title: "בעלים, בית הארחה של הרבי"
+      quote: "Honestly, if I had gone with a typical web designer, I would've been paying thousands. Peretz built me a site that looks great, works smoothly, and didn't break the bank.",
+      author: "Mendel",
+      title: "Owner, The Rebbe's Guesthouse"
     }
   }
 ];
 
-// אתחול תצוגת תיק העבודות כאשר ה-DOM נטען
-document.addEventListener('DOMContentLoaded', function() {
-  // בדיקה אם אנחנו בדף תיק העבודות
+// Initialize portfolio showcase
+document.addEventListener('DOMContentLoaded', () => {
   const portfolioContainer = document.getElementById('portfolioContainer');
   
   if (portfolioContainer) {
     new PortfolioShowcase('portfolioContainer', portfolioProjects);
-  }
-  
-  // לתצוגה מקדימה של תיק העבודות בדף הבית
-  const portfolioPreview = document.querySelector('.portfolio-preview');
-  
-  if (portfolioPreview) {
-    // קבלת 3 הפרויקטים הראשונים לתצוגה מקדימה
-    const previewProjects = portfolioProjects.slice(0, 3);
-    
-    // עדכון פריטי תיק העבודות בתצוגה מקדימה
-    const portfolioItems = portfolioPreview.querySelectorAll('.portfolio-item');
-    
-    if (portfolioItems.length > 0) {
-      portfolioItems.forEach((item, index) => {
-        if (previewProjects[index]) {
-          const project = previewProjects[index];
-          
-          // עדכון תמונה
-          const image = item.querySelector('img');
-          if (image) {
-            image.src = project.thumbnail;
-            image.alt = project.title;
-          }
-          
-          // עדכון כותרת
-          const title = item.querySelector('h3');
-          if (title) {
-            title.textContent = project.title;
-          }
-          
-          // עדכון קטגוריות
-          const categories = item.querySelector('p');
-          if (categories) {
-            categories.textContent = project.categories ? project.categories.join(', ') : '';
-          }
-          
-          // עדכון קישור
-          const link = item.querySelector('a');
-          if (link) {
-            link.href = `pages/portfolio.html#${item.id}`;
-          }
-        }
-      });
-    }
   }
 });
