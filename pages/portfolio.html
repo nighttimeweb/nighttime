@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="/nighttime/favicon.ico">
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <!-- Optional high-res version -->
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
+    <!-- Optional for Apple devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
 
+    <!-- Theme Color (Browser bar color) -->
+    <meta name="theme-color" content="#0A1128">
+
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="../site.webmanifest" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Nighttime Website Development</title>
@@ -62,106 +72,108 @@
         </div>
         <div class="container">
             <h1>Our Portfolio</h1>
-             <p>We’re just getting started — here’s our first live project, with more on the way.</p>
+            <p>Our First Projects</p>
         </div>
     </section>
 
-    <!-- Portfolio Container -->
-    <section id="portfolioContainer" class="portfolio-section">
+    <!-- Portfolio Section -->
+    <section class="portfolio-detailed">
         <div class="container">
             <div class="section-intro">
-                <h2>Our Work</h2>
-                <p class="lead">Each project represents our commitment to creating exceptional websites that deliver results for our clients. Browse through our portfolio to see how we've helped small businesses transform their online presence.</p>
+                <h2>Our Recent Projects</h2>
+                <p>We're a new studio, but we've already launched our first professional website — and this is just the beginning. We're currently taking on new clients — your project could be featured here soon.</p>
             </div>
-            <!-- Portfolio filters and grid will be dynamically inserted here by portfolio.js -->
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="redesign">Redesign</button>
+                <button class="filter-btn" data-filter="responsive">Responsive</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1: The Rebbe's Guesthouse -->
+                <div class="portfolio-item" data-category="development responsive">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio-1-en.jpg" alt="The Rebbe's Guesthouse Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>The Rebbe's Guesthouse</h3>
+                                <p>Custom Website Development, Responsive Design</p>
+                                <a href="#project1" class="btn btn-small portfolio-details-btn">View Details</a>
+                                <a href="https://therebbesguests.com" target="_blank" class="btn btn-small">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Details Modals -->
+            <div id="project1" class="portfolio-modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div class="project-details">
+                        <div class="project-images">
+                            <div class="main-image">
+                                <img src="../images/portfolio-1-en.jpg" alt="The Rebbe's Guesthouse Website">
+                            </div>
+                            <div class="image-thumbnails">
+                                <img src="../images/portfolio-1-detail-1-en.jpg" alt="The Rebbe's Guesthouse Homepage">
+                                <img src="../images/portfolio-1-detail-2-en.jpg" alt="The Rebbe's Guesthouse Mobile View">
+                                <img src="../images/portfolio-1-detail-3-en.jpg" alt="The Rebbe's Guesthouse Booking Page">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h2>The Rebbe's Guesthouse</h2>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <h4>Client:</h4>
+                                    <p>Mendel, The Rebbe's Guesthouse</p>
+                                </div>
+                                <div class="meta-item">
+                                    <h4>Services:</h4>
+                                    <p>Website Development, Responsive Design, SEO Optimization</p>
+                                </div>
+                                <div class="meta-item">
+                                    <h4>Date:</h4>
+                                    <p>2025</p>
+                                </div>
+                                <div class="meta-item">
+                                    <h4>Website:</h4>
+                                    <p><a href="https://therebbesguests.com" target="_blank">TheRebbesGuests.com</a></p>
+                                </div>
+                            </div>
+                            <div class="project-description">
+                                <h3>About the Project</h3>
+                                <p>The Rebbe's Guesthouse needed a professional website to showcase their unique accommodation located in Crown Heights. The client wanted an elegant yet affordable website that would highlight the features of the guesthouse and make booking easy.</p>
+                                <p>We created a responsive website with an elegant design that reflects the warm and welcoming atmosphere of the guesthouse. The site includes photo galleries, room information, and a simple booking system.</p>
+                                <h3>Challenges and Solutions</h3>
+                                <p>The main challenge was creating a professional-quality website with a limited budget. We addressed this challenge by using efficient solutions and focusing on essential elements that would have the greatest impact on user experience and conversions.</p>
+                                <h3>Results</h3>
+                                <p>The website significantly improved The Rebbe's Guesthouse's online presence, attracting more visitors and making the booking process easier. The client was extremely satisfied with the result, noting that the website exceeded their expectations while staying within their budget.</p>
+                                <div class="project-testimonial">
+                                    <blockquote>
+                                        "Honestly, if I had gone with a typical web designer, I would've been paying thousands. Peretz built me a site that looks great, works smoothly, and didn't break the bank."
+                                    </blockquote>
+                                    <cite>— Mendel, Owner</cite>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- Client Testimonials -->
-  <!-- Client Testimonials -->
-<section class="testimonials">
-    <div class="container">
-        <div class="section-header">
-            <h2>Client Feedback</h2>
-            <p>What our clients say about their experience</p>
-        </div>
-        <div class="testimonial-slider">
-            <div class="testimonial-slide active">
-                <div class="testimonial-content">
-                    <div class="quote-icon">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "Honestly, if I had gone with a typical web designer, I would’ve been paying thousands. 
-                        Peretz built me a site that looks great, works smoothly, and didn’t break the bank."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Mendel</h4>
-                            <p>Client, The Rebbe's Guesthouse</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--
-            <div class="testimonial-slide">
-                <div class="testimonial-content">
-                    <div class="quote-icon">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="testimonial-text">Working with Nighttime Website Development was a game-changer for our bakery. The website they created perfectly captures our brand and has significantly increased our online orders.</p>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Owner, Sweet Delights Bakery</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-slide">
-                <div class="testimonial-content">
-                    <div class="quote-icon">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="testimonial-text">After Peretz redesigned our website, our online inquiries increased by 40%. The new site is not only beautiful but also much easier for our customers to navigate and find what they need.</p>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Emma Rodriguez</h4>
-                            <p>Owner, Boutique Clothing Store</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-
-        </div>
-
-        <!-- Optional: Hide arrows and dots if only one testimonial -->
-        <!--
-        <div class="testimonial-controls">
-            <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
-            <div class="testimonial-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
-        </div>
-        -->
-    </div>
-</section>
 
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to create your own success story?</h2>
-                <p>Let's build a website that takes your business to the next level.</p>
+                <h2>Ready to create your next project?</h2>
+                <p>Contact us today to discuss your vision.</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
-                    <a href="services.html" class="btn btn-secondary">Explore Services</a>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    <a href="pricing.html" class="btn btn-secondary">See Pricing</a>
                 </div>
             </div>
         </div>
@@ -199,7 +211,7 @@
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> Crown Heights, Brooklyn, NY</li>
                         <li><i class="fas fa-phone"></i> <a href="tel:+13472205998">(347) 220-5998</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:nighttimeweb@gmail.com">Nighttimeweb@gmail.com</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@nighttimewebdev.com">info@nighttimewebdev.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -217,6 +229,5 @@
     </footer>
 
     <script src="../js/main.js"></script>
-   <script src="../js/portfolio.js"></script>
 </body>
 </html>
