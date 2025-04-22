@@ -353,13 +353,18 @@ function initPortfolioFilters() {
 
 // Portfolio Modal
 function initPortfolioModal() {
-    const viewButtons = document.querySelectorAll('.portfolio-view-btn');
+    // Handle both types of buttons
+    const viewButtons = document.querySelectorAll('.portfolio-view-btn, .portfolio-details-btn');
     
     if (viewButtons.length === 0) return;
     
     viewButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const projectId = button.getAttribute('data-project');
+        button.addEventListener('click', (e) => {
+            // Prevent default behavior for anchor tags
+            e.preventDefault();
+            
+            // Get project ID from either data attribute or href
+            const projectId = button.getAttribute('data-project') || button.getAttribute('href').substring(1);
             const modal = document.getElementById(projectId);
             
             if (modal) {
