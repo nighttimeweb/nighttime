@@ -1430,7 +1430,7 @@ button {
     background-color: var(--primary-color);
 }
 
-.project-modal {
+.portfolio-modal {
     display: none;
     position: fixed;
     top: 0;
@@ -1468,7 +1468,7 @@ button {
 }
 
 .project-details {
-    display: none;
+    display: block;
 }
 
 .project-header {

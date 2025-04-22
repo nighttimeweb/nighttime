@@ -353,47 +353,59 @@ function initPortfolioFilters() {
 
 // Portfolio Modal
 function initPortfolioModal() {
-    const modal = document.getElementById('projectModal');
     const viewButtons = document.querySelectorAll('.portfolio-view-btn');
-    const closeButton = document.querySelector('.close-modal');
     
-    if (!modal || viewButtons.length === 0) return;
+    if (viewButtons.length === 0) return;
     
     viewButtons.forEach(button => {
         button.addEventListener('click', () => {
             const projectId = button.getAttribute('data-project');
-            const projectDetails = document.getElementById(`${projectId}-details`);
+            const modal = document.getElementById(projectId);
             
-            if (projectDetails) {
-                // Hide all project details
-                document.querySelectorAll('.project-details').forEach(details => {
-                    details.style.display = 'none';
-                });
-                
-                // Show the selected project details
-                projectDetails.style.display = 'block';
-                
-                // Show the modal
+            if (modal) {
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden'; // Prevent scrolling
+                
+                // Show the project details
+                const projectDetails = modal.querySelector('.project-details');
+                if (projectDetails) {
+                    projectDetails.style.display = 'block';
+                }
             }
         });
     });
     
     // Close modal when clicking the close button
-    if (closeButton) {
+    document.querySelectorAll('.close-modal').forEach(closeButton => {
         closeButton.addEventListener('click', () => {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Re-enable scrolling
+            const modal = closeButton.closest('.portfolio-modal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+                
+                // Hide the project details
+                const projectDetails = modal.querySelector('.project-details');
+                if (projectDetails) {
+                    projectDetails.style.display = 'none';
+                }
+            }
         });
-    }
+    });
     
     // Close modal when clicking outside the content
-    window.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Re-enable scrolling
-        }
+    document.querySelectorAll('.portfolio-modal').forEach(modal => {
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+                
+                // Hide the project details
+                const projectDetails = modal.querySelector('.project-details');
+                if (projectDetails) {
+                    projectDetails.style.display = 'none';
+                }
+            }
+        });
     });
     
     // Handle thumbnail clicks in project gallery
@@ -401,11 +413,10 @@ function initPortfolioModal() {
     
     projectThumbs.forEach(thumb => {
         thumb.addEventListener('click', () => {
-            const mainImage = thumb.closest('.project-gallery').querySelector('.project-main-image');
+            const mainImage = thumb.closest('.project-gallery').querySelector('.project-main-image img');
             
             if (mainImage) {
                 // Swap the src attribute
-                const tempSrc = mainImage.src;
                 mainImage.src = thumb.src;
                 
                 // Add a small animation
