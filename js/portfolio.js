@@ -117,12 +117,12 @@ class PortfolioShowcase {
 
   createProjectModal() {
     // Create modal container if it doesn't exist
-    let modal = document.getElementById('projectModal');
+    let modal = document.getElementById('project1');
     
     if (!modal) {
       modal = document.createElement('div');
       modal.className = 'project-modal';
-      modal.id = 'projectModal';
+      modal.id = 'project1';
       
       const modalContent = document.createElement('div');
       modalContent.className = 'modal-content';
@@ -378,12 +378,13 @@ class PortfolioShowcase {
     
     // View project buttons
     const viewButtons = this.container.querySelectorAll('.portfolio-details-btn');
-    const modal = document.getElementById('projectModal');
+    const modal = document.getElementById('project1');
     const closeButton = modal.querySelector('.close-modal');
     
     viewButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const projectId = button.getAttribute('data-project');
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const projectId = button.getAttribute('data-project') || button.getAttribute('href').substring(1);
         const projectDetails = document.getElementById(`${projectId}-details`);
         
         if (projectDetails) {
@@ -443,7 +444,7 @@ const portfolioProjects = [
   {
     title: "The Rebbe's Guesthouse",
     categories: ["development", "responsive"],
-    thumbnail: "/images/portfolio-1-en.jpg", // Updated path
+    thumbnail: "/images/portfolio-1-en.jpg",
     url: "https://TheRebbesGuests.com",
     overview: "This guesthouse in Crown Heights needed a modern site for group Shabbaton rentals. We focused on clean design, room showcases, and easy-to-navigate information.",
     challenge: "The owners had no online presence and needed a way to attract out-of-town groups for weekends. The site had to be both functional and welcoming.",
