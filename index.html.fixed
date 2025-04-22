@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
 <!-- Standard favicon -->
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <!-- Optional high-res version -->
@@ -10,14 +9,6 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <!-- Web App Manifest -->
 <link rel="manifest" href="site.webmanifest">
-=======
-   <!-- Standard favicon -->
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <!-- Optional high-res version -->
-    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
-    <!-- Optional for Apple devices -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
->>>>>>> 57273d99422228ac7794cde9983a61d1157fd115
 <!-- Theme Color -->
 <meta name="theme-color" content="#0A1128">
 <meta name="apple-mobile-web-app-title" content="Nighttime" />
@@ -196,8 +187,8 @@
                         <div class="portfolio-info">
                             <h3>The Rebbe's Guesthouse</h3>
                             <p>Custom Website Development, Responsive Design</p>
-                                <button class="btn btn-small portfolio-view-btn" data-project="project1">View Details</button>
-                                <a href="https://TheRebbesGuests.com" target="_blank" class="btn btn-small">Visit Live Site</a>
+                              <button class="btn btn-small portfolio-view-btn" data-project="project1">View Details</button>
+                            <a href="https://TheRebbesGuests.com" target="_blank" class="btn btn-small">Visit Live Site</a>
                         </div>
                     </div>
                 </div>
@@ -210,17 +201,10 @@
 
         </div>
         <!-- Portfolio Modal -->
-<<<<<<< HEAD
         <div id="project1" class="portfolio-modal">
             <div class="modal-content">
                 <span class="close-modal">&times;</span>
                 <div class="project-details">
-=======
-      <div id="projectModal" class="portfolio-modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-             <div id="project1-details" class="project-details">
->>>>>>> 57273d99422228ac7794cde9983a61d1157fd115
                     <div class="project-images">
                         <div class="main-image">
                             <img src="/images/portfolio-1-en.jpg" alt="The Rebbe's Guesthouse Website">
@@ -235,17 +219,6 @@
                             <div class="meta-item">
                                 <h4>Client:</h4>
                                 <p>Mendel, The Rebbe's Guesthouse</p>
-<<<<<<< HEAD
-=======
-<div id="projectModal" class="portfolio-modal">
-                <div class="modal-content">
-                    <span class="close-modal">&times;</span>
-                    <div class="project-details">
-                        <div class="project-images">
-                            <div class="main-image">
-                                <img src="/images/portfolio-1-en.jpg" alt="The Rebbe's Guesthouse Website">
-=======
->>>>>>> 57273d99422228ac7794cde9983a61d1157fd115
                             </div>
                             <div class="meta-item">
                                 <h4>Services:</h4>
@@ -279,13 +252,8 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-    </div>
-</section>
-=======
->>>>>>> 57273d99422228ac7794cde9983a61d1157fd115
         <p style="text-align:center; margin-top: 20px; color: #ccc;">
-            We are currently booking new clients — your project could be featured here next.
+            We're currently booking new clients — your project could be featured here next.
         </p>
     </div>
 </section>
@@ -339,117 +307,5 @@
                     <div class="quote-icon">
                         <i class="fas fa-quote-left"></i>
                     </div>
-                    <p class="testimonial-text">Working with Peretz was a game-changer for our business. The website he created is exactly what we needed - professional, user-friendly, and it perfectly represents our brand.</p>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Michael Chen</h4>
-                            <p>Director, Professional Services Firm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-slide">
-                <div class="testimonial-content">
-                    <div class="quote-icon">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="testimonial-text">The redesign of our website has completely transformed our online business. We've seen a 40% increase in online inquiries since launching our new site.</p>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Emma Rodriguez</h4>
-                            <p>Owner, Boutique Clothing Store</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-
-        </div>
-
-        <!--
-        <div class="testimonial-controls">
-            <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
-            <div class="testimonial-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
-        </div>
-        -->
-    </div>
-</section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to elevate your online presence?</h2>
-                <p>Let's create a website that works as hard as you do.</p>
-                <div class="cta-buttons">
-                    <a href="pages/contact.html" class="btn btn-primary">Get Started</a>
-                    <a href="pages/pricing.html" class="btn btn-secondary">View Pricing</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <a href="index.html" class="footer-logo">
-                        <img src="images/logo-footer.svg" alt="Nighttime Website Development Logo">
-                    </a>
-                    <p>Premium website development for small businesses. Based in Crown Heights, Brooklyn, NY.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/about.html">About</a></li>
-                        <li><a href="pages/services.html">Services</a></li>
-                        <li><a href="pages/portfolio.html">Portfolio</a></li>
-                        <li><a href="pages/pricing.html">Pricing</a></li>
-                        <li><a href="pages/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Crown Heights, Brooklyn, NY</li>
-                        <li><i class="fas fa-phone"></i> <a href="tel:+13477700067">(347) 770-0067</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:nighttimeweb@gmail.com">nighttimeweb@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Nighttime Website Development. All rights reserved.</p>
-                <ul class="footer-legal">
-                    <li><a href="pages/privacy.html">Privacy Policy</a></li>
-                    <li><a href="pages/terms.html">Terms of Service</a></li>
-                </ul>
-            </div>
-        </div>
-        <button class="back-to-top" id="backToTop">
-            <i class="fas fa-arrow-up"></i>
-        </button>
-    </footer>
-
-    <script src="js/main.js"></script>
-<<<<<<< HEAD
-    <script src="js/portfolio.js"></script>
-=======
-   <script src="js/portfolio.js"></script>
-
->>>>>>> 57273d99422228ac7794cde9983a61d1157fd115
-</body>
-</html>
+                    <p class="testimonial-text">Working with Peretz was a gam
+(Content truncated due to size limit. Use line ranges to read in chunks)
