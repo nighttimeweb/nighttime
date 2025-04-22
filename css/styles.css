@@ -128,6 +128,24 @@ button, input, select, textarea {
     font-size: inherit;
     color: inherit;
 }
+.portfolio-info .btn {
+  appearance: none;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-md);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all var(--transition-medium);
+  font-size: 0.875rem;
+}
+
+.portfolio-info .btn:hover {
+  background-color: var(--highlight-color);
+  color: var(--primary-color);
+}
 
 button {
     cursor: pointer;
