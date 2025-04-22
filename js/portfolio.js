@@ -117,12 +117,12 @@ class PortfolioShowcase {
 
   createProjectModal() {
     // Create modal container if it doesn't exist
-    let modal = document.getElementById('project1');
+    let modal = document.getElementById('projectModal');
     
     if (!modal) {
       modal = document.createElement('div');
       modal.className = 'project-modal';
-      modal.id = 'project1';
+      modal.id = 'projectModal';
       
       const modalContent = document.createElement('div');
       modalContent.className = 'modal-content';
@@ -377,8 +377,8 @@ class PortfolioShowcase {
     });
     
     // View project buttons
-    const viewButtons = this.container.querySelectorAll('.portfolio-details-btn');
-    const modal = document.getElementById('project1');
+   const viewButtons = document.querySelectorAll('.portfolio-view-btn');
+    const modal = document.getElementById('projectModal');
     const closeButton = modal.querySelector('.close-modal');
     
     viewButtons.forEach(button => {
