@@ -81,6 +81,10 @@ class PortfolioShowcase {
       const category = document.createElement('p');
       category.textContent = project.categories ? project.categories.join(', ') : '';
       
+      // Create button group wrapper
+      const buttonGroup = document.createElement('div');
+      buttonGroup.className = 'button-group';
+      
       // Create view details button
       const detailsButton = document.createElement('button');
       detailsButton.className = 'btn btn-small portfolio-view-btn';
@@ -89,7 +93,9 @@ class PortfolioShowcase {
       
       info.appendChild(title);
       info.appendChild(category);
-      info.appendChild(detailsButton);
+      
+      // Add details button to button group
+      buttonGroup.appendChild(detailsButton);
       
       // Create visit site button if URL exists
       if (project.url) {
@@ -98,8 +104,11 @@ class PortfolioShowcase {
         visitButton.href = project.url;
         visitButton.target = '_blank';
         visitButton.textContent = 'Visit Site';
-        info.appendChild(visitButton);
+        buttonGroup.appendChild(visitButton);
       }
+      
+      // Add button group to info
+      info.appendChild(buttonGroup);
       
       overlay.appendChild(info);
       imageContainer.appendChild(image);

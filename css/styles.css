@@ -816,10 +816,10 @@ button {
     padding: var(--spacing-md);
     transform: translateY(20px);
     transition: transform var(--transition-medium);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .portfolio-info h3, 
@@ -831,20 +831,26 @@ button {
     margin-bottom: 1.5rem;
 }
 
-/* Add a wrapper for the buttons to ensure they're side by side */
+/* Add a wrapper for the buttons to ensure they're side by side - flexbox approach */
 .portfolio-info .button-group {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    flex-wrap: nowrap;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
 }
 
-.portfolio-info .btn-small {
-    margin: 0;
-    display: inline-block;
-    white-space: nowrap;
-    min-width: fit-content;
+/* Alternative button display method - ensures side by side display across browsers */
+.portfolio-info .button-group button,
+.portfolio-info .button-group a {
+    display: inline-block !important;
+    width: auto !important;
+    float: none !important;
+    position: relative !important;
+    margin: 0 5px !important;
+    vertical-align: middle !important;
 }
 
 .portfolio-item:hover .portfolio-overlay {
