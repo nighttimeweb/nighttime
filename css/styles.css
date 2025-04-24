@@ -1985,7 +1985,7 @@ button {
 .form-group textarea {
     width: 100%;
     padding: 0.75rem;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #000; /* Changed to solid black */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--border-radius-md);
     color: var(--text-color);
