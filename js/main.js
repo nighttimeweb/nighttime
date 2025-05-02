@@ -1,7 +1,7 @@
 /**
  * Nighttime Website Development
  * Main JavaScript File
- * Author: Manus AI
+ * Author: Peretz Mockin
  * Version: 1.0
  */
 
