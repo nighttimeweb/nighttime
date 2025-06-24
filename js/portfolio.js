@@ -278,7 +278,7 @@ class PortfolioShowcase {
 // Sample portfolio data for English version
 const portfolioProjects = [
   {
-    title: "The Rebbe's Guesthouse",
+    title: "The Rebbe's Guests",
     categories: ["development", "responsive"],
     thumbnail: "/images/portfolio-1-en.jpg",
     url: "https://TheRebbesGuests.com",
@@ -286,7 +286,7 @@ const portfolioProjects = [
     challenge: "The owners had no online presence and needed a way to attract out-of-town groups for weekends. The site had to be both functional and welcoming.",
     solution: "We created a custom HTML site with a gallery-style layout, room labels, and a booking section that reflects the Shabbos atmosphere and Crown Heights community.",
     results: "The guesthouse is now fully booked most weekends, and visitors consistently mention finding them through their website.",
-    client: "Mendel, The Rebbe's Guesthouse",
+    client: "Mendel, The Rebbe's Guests",
     services: ["Website Design", "Responsive Development", "SEO Optimization"],
     timeline: "3 weeks",
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
@@ -296,7 +296,7 @@ const portfolioProjects = [
     testimonial: {
       quote: "Honestly, if I had gone with a typical web designer, I would've been paying thousands. Peretz built me a site that looks great, works smoothly, and didn't break the bank.",
       author: "Mendel",
-      title: "Owner, The Rebbe's Guesthouse"
+      title: "Owner, The Rebbe's Guests"
     }
   }
 ];
